@@ -1,33 +1,60 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <title>Shopping Cidadão | Recrutamento</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8">
-    <title> Shopping Cidadão | Recrutamento </title>
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
+  <body>
     <header>
-        <a href="#" class="logo">Recrutamento</a>
-        <div class="toggle"></div>
-        <ul>
-            <li><a href="#">Início</a></li>
-            <li><a href="#">Quem somos</a></li>
-            <li><a href="#">Porque fazer parte</a></li>
-            <li><a href="#">Candidate-se</a></li>
-            <li><a href="#">Hackathons/Processos Seletivos</a></li>
-            <li><a href="#">Educa Cidadão</a></li>
-        </ul>
+      <a href="#" class="logo">Recrutamento</a>
+      <div class="toggle"></div>
+      <ul>
+        <li><a href="#">Início</a></li>
+        <li><a href="#">Quem somos</a></li>
+        <li><a href="#">Porque fazer parte</a></li>
+        <li><a href="#">Candidate-se</a></li>
+        <li><a href="#">Processos Seletivos</a></li>
+        <li><a href="#">Educa Cidadão</a></li>
+      </ul>
     </header>
     <section class="banner">
-        <div class="textBx">
-            <h2><span> Shopping Cidadão. </span></h2>
-            <h3>Democratizando atendimentos públicos!</h3>
-            <a href="#" class="btn">Sobre a gente</a>
-        </div>
+      <div class="textBx">
+        <h2><span> Shopping Cidadão </span></h2>
+        <h3>Democratizando atendimentos públicos!</h3>
+        <a href="#" class="btn">Sobre a gente</a>
+      </div>
     </section>
-</body>
-
+    <section class="about">
+      <div class="heading">
+        <h2>Sobre a gente</h2>
+      </div>
+      <div class="content">
+        <div class="contentBx w50">
+          <h3>Democratizando atendimentos públicos!</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti
+            aliquam possimus, error esse voluptate exercitationem tempora dolor
+            quos facilis minima sapiente optio autem minus necessitatibus
+            temporibus, dolore eius rem praesentium.<br /><br />Lorem ipsum
+            dolor sit amet consectetur adipisicing elit. Optio expedita illo,
+            quos voluptates cupiditate saepe ratione aliquam minima soluta
+            numquam ipsum vel fuga iure quasi natus nisi minus nesciunt
+            veritatis.
+          </p>
+        </div>
+        <div class="w50">
+          <img src="/images/img1.png" class="img" />
+        </div>
+      </div>
+    </section>
+    <script type="text/javascript">
+      window.addEventListener('scroll', function () {
+        var header = document.querySelector('header');
+        header.classList.toggle('sticky', window.scrollY > 0);
+      });
+    </script>
+  </body>
 </html>

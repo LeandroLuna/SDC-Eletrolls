@@ -65,6 +65,14 @@ header
     display: flex;
     justify-content: space-around;
     align-items: center;
+    transition: 0.5s;
+}
+
+header .sticky
+{
+    background: #fff;
+    padding: 20px 100px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
 }
 
 header .logo
@@ -75,6 +83,11 @@ header .logo
     text-decoration: none;
     font-weight: 700;
     letter-spacing: 2px;
+}
+
+header .sticky.logo
+{
+    color: #111;
 }
 
 header ul
@@ -96,4 +109,44 @@ header ul li a
     margin: 0 15px;
     color: #fff;
     text-decoration: none;
+}
+
+header .sticky ul li a{
+    color: #111;
+}
+
+.heading{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #111;
+}
+
+.heading h2{
+    font-weight: 600;
+    font-size: 30px;
+
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 80%;
+}
+
+.contentBx{
+    padding-right: 50px;
+}
+
+.contentBx h3{
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.w50{
+    min-width: 60%;
+}
+
+img{
+    max-width: 100%;
 }
