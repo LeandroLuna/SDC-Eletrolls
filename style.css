@@ -15,7 +15,7 @@
     background-position: right;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center;  
 }
 
 .banner h2
@@ -24,20 +24,21 @@
     color: rgb(255, 255, 255);
     font-weight: 500;
     line-height: 1.5em;
+    -webkit-text-stroke: #111 2px;
 }
 
 .banner h2 span
 {
     font-size: 1.5em;
-    font-weight: 700;
-    
+    font-weight: 700; 
 }
 
 .banner h3
 {
     font-size: 1.5em;
     color: #fff;
-    font-weight: 500;
+    font-weight: 1000;
+    -webkit-text-stroke: rgb(0, 0, 0) 1px;
 }
 
 .btn{
@@ -65,12 +66,12 @@ header
     display: flex;
     justify-content: space-around;
     align-items: center;
+    background-color: #111;
     transition: 0.5s;
 }
 
-header .sticky
-{
-    background: #fff;
+header.white{
+    background: rgb(255, 255, 255);
     padding: 20px 100px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
 }
@@ -85,7 +86,7 @@ header .logo
     letter-spacing: 2px;
 }
 
-header .sticky.logo
+header.white .logo
 {
     color: #111;
 }
@@ -106,14 +107,15 @@ header ul li a
 {
     position: relative;
     display: inline-block;
-    margin: 0 15px;
+    margin: 0 10px;
     color: #fff;
     text-decoration: none;
 }
 
-header .sticky ul li a{
+header.white ul li a{
     color: #111;
 }
+
 
 .heading{
     width: 100%;
@@ -123,15 +125,16 @@ header .sticky ul li a{
 }
 
 .heading h2{
+    margin-top: 50px;
     font-weight: 600;
     font-size: 30px;
-
 }
 .content{
     display: flex;
     justify-content: space-between;
     margin: auto;
     width: 80%;
+    margin-bottom: 50px;
 }
 
 .contentBx{

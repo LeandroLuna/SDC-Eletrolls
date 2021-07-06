@@ -3,7 +3,7 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="UTF-8" />
-    <title>Shopping Cidadão | Recrutamento</title>
+    <title>Shopping do Cidadão | Recrutamento</title>
     <link rel="stylesheet" href="style.css" />
   </head>
 
@@ -12,7 +12,6 @@
       <a href="#" class="logo">Recrutamento</a>
       <div class="toggle"></div>
       <ul>
-        <li><a href="#">Início</a></li>
         <li><a href="#">Quem somos</a></li>
         <li><a href="#">Porque fazer parte</a></li>
         <li><a href="#">Candidate-se</a></li>
@@ -22,14 +21,14 @@
     </header>
     <section class="banner">
       <div class="textBx">
-        <h2><span> Shopping Cidadão </span></h2>
+        <h2><span> Shopping do Cidadão </span></h2>
         <h3>Democratizando atendimentos públicos!</h3>
         <a href="#" class="btn">Sobre a gente</a>
       </div>
     </section>
     <section class="about">
       <div class="heading">
-        <h2>Sobre a gente</h2>
+        <h2>Quem somos</h2>
       </div>
       <div class="content">
         <div class="contentBx w50">
@@ -50,10 +49,14 @@
         </div>
       </div>
     </section>
-    <script type="text/javascript">
-      window.addEventListener('scroll', function () {
-        var header = document.querySelector('header');
-        header.classList.toggle('sticky', window.scrollY > 0);
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script>
+      $(window).scroll(function () {
+        if ($(window).scrollTop()) {
+          $('header').addClass('white');
+        } else {
+          $('header').removeClass('white');
+        }
       });
     </script>
   </body>
