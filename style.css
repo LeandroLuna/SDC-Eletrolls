@@ -153,3 +153,26 @@ header.white ul li a{
 img{
     max-width: 100%;
 }
+
+.video{
+    min-width: 60%;
+    padding-right: 50px;
+}
+
+video{
+    width: inherit;
+    height: inherit;
+}
+
+.content2{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 85%;
+    margin-bottom: 50px; 
+}
+
+.workBx h3{
+    font-size: 24px;
+    margin-bottom: 30px;
+}
