@@ -129,6 +129,7 @@ header.white ul li a{
     font-weight: 600;
     font-size: 30px;
 }
+
 .content{
     display: flex;
     justify-content: space-between;
@@ -169,10 +170,81 @@ video{
     justify-content: space-between;
     margin: auto;
     width: 85%;
-    margin-bottom: 50px; 
+    margin-bottom: 50px;
 }
 
 .workBx h3{
     font-size: 24px;
     margin-bottom: 30px;
+    color: #fff;
+}
+
+.work{
+    background-color: #111;
+    color: #fff;
+    padding-bottom: 25px;
+}
+
+.heading.white{
+    color: #fff;  
+}
+
+.heading.white h2{
+    padding-top: 50px;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.candidate{
+    background-color: #f7f7f7;
+}
+
+.candidate .content3{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.candidate .content3 .candBx{
+    max-width: calc(50% - 40px);
+    padding: 60px 40px;
+    margin: 20px;
+    background: #3e8577;
+}
+
+.candidate .content3 .candBx2{
+    max-width: calc(50% - 40px);
+    padding: 60px 40px;
+    margin: 20px;
+    background: #1b0452;
+}
+
+/* FUNDO COM IMAGEM: https://www.w3schools.com/cssref/css3_pr_background-size.asp */
+
+.candidate .content3 .candBx h3{
+    margin-top: 40px;
+    text-align: end;
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1em;
+}
+
+.candidate .content3 .candBx h3 span{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.candidate .content3 .candBx2 h3{
+    margin-top: 40px;
+    text-align: end;
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1em;
+}
+
+.candidate .content3 .candBx2 h3 span{
+    font-size: 14px;
+    font-weight: 400;
 }
