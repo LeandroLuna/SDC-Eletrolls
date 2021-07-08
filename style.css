@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
-*
-{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-.banner
-{
+
+.banner {
     position: relative;
     min-height: 100vh;
     background: url(/images/banner.png);
@@ -15,11 +15,10 @@
     background-position: right;
     display: flex;
     justify-content: space-between;
-    align-items: center;  
+    align-items: center;
 }
 
-.banner h2
-{
+.banner h2 {
     font-size: 3em;
     color: rgb(255, 255, 255);
     font-weight: 500;
@@ -27,21 +26,19 @@
     -webkit-text-stroke: #111 2px;
 }
 
-.banner h2 span
-{
+.banner h2 span {
     font-size: 1.5em;
-    font-weight: 700; 
+    font-weight: 700;
 }
 
-.banner h3
-{
+.banner h3 {
     font-size: 1.5em;
     color: #fff;
     font-weight: 1000;
     -webkit-text-stroke: rgb(0, 0, 0) 1px;
 }
 
-.btn{
+.btn {
     position: relative;
     background: #ff7b00;
     display: inline-block;
@@ -55,8 +52,7 @@
     font-weight: 500;
 }
 
-header
-{
+header {
     position: fixed;
     top: 0;
     left: 0;
@@ -70,14 +66,13 @@ header
     transition: 0.5s;
 }
 
-header.white{
+header.white {
     background: rgb(255, 255, 255);
     padding: 20px 100px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
 }
 
-header .logo
-{
+header .logo {
     color: #fff;
     font-size: 24px;
     text-transform: uppercase;
@@ -86,25 +81,21 @@ header .logo
     letter-spacing: 2px;
 }
 
-header.white .logo
-{
+header.white .logo {
     color: #111;
 }
 
-header ul
-{
+header ul {
     position: relative;
     display: flex;
 }
 
-header ul li
-{
+header ul li {
     position: relative;
     list-style: none;
 }
 
-header ul li a
-{
+header ul li a {
     position: relative;
     display: inline-block;
     margin: 0 10px;
@@ -112,25 +103,25 @@ header ul li a
     text-decoration: none;
 }
 
-header.white ul li a{
+header.white ul li a {
     color: #111;
 }
 
 
-.heading{
+.heading {
     width: 100%;
     text-align: center;
     margin-bottom: 30px;
     color: #111;
 }
 
-.heading h2{
+.heading h2 {
     margin-top: 50px;
     font-weight: 600;
     font-size: 30px;
 }
 
-.content{
+.content {
     display: flex;
     justify-content: space-between;
     margin: auto;
@@ -138,34 +129,34 @@ header.white ul li a{
     margin-bottom: 50px;
 }
 
-.contentBx{
+.contentBx {
     padding-right: 50px;
 }
 
-.contentBx h3{
+.contentBx h3 {
     font-size: 24px;
     margin-bottom: 30px;
 }
 
-.w50{
+.w50 {
     min-width: 60%;
 }
 
-img{
+img {
     max-width: 100%;
 }
 
-.video{
+.video {
     min-width: 60%;
     padding-right: 50px;
 }
 
-video{
+video {
     width: inherit;
     height: inherit;
 }
 
-.content2{
+.content2 {
     display: flex;
     justify-content: space-between;
     margin: auto;
@@ -173,55 +164,77 @@ video{
     margin-bottom: 50px;
 }
 
-.workBx h3{
+.workBx h3 {
     font-size: 24px;
     margin-bottom: 30px;
     color: #fff;
 }
 
-.work{
+.work {
     background-color: #111;
     color: #fff;
     padding-bottom: 25px;
 }
 
-.heading.white{
-    color: #fff;  
+.heading.white {
+    color: #fff;
 }
 
-.heading.white h2{
+.heading.white h2 {
     padding-top: 50px;
     font-weight: 600;
     font-size: 30px;
 }
 
-.candidate{
+.candidate {
     background-color: #f7f7f7;
 }
 
-.candidate .content3{
+.candidate .content3 {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin: auto;
+    width: 80%;
+    margin-bottom: 50px;
 }
 
-.candidate .content3 .candBx{
+.candidate .content3 .candBx {
     max-width: calc(50% - 40px);
     padding: 60px 40px;
     margin: 20px;
     background: #3e8577;
 }
 
-.candidate .content3 .candBx2{
+.candidate .content3 .candBx p {
+    color: #fff;
+    font-style: italic;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.candidate .content3 .candBx p {
+    color: #fff;
+    font-style: italic;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.candidate .content3 .candBx2 p {
+    color: #fff;
+    font-style: italic;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.candidate .content3 .candBx2 {
     max-width: calc(50% - 40px);
     padding: 60px 40px;
     margin: 20px;
     background: #1b0452;
 }
 
-/* FUNDO COM IMAGEM: https://www.w3schools.com/cssref/css3_pr_background-size.asp */
-
-.candidate .content3 .candBx h3{
+.candidate .content3 .candBx h3 {
     margin-top: 40px;
     text-align: end;
     color: #fff;
@@ -230,12 +243,12 @@ video{
     line-height: 1em;
 }
 
-.candidate .content3 .candBx h3 span{
+.candidate .content3 .candBx h3 span {
     font-size: 14px;
     font-weight: 400;
 }
 
-.candidate .content3 .candBx2 h3{
+.candidate .content3 .candBx2 h3 {
     margin-top: 40px;
     text-align: end;
     color: #fff;
@@ -244,7 +257,13 @@ video{
     line-height: 1em;
 }
 
-.candidate .content3 .candBx2 h3 span{
+.candidate .content3 .candBx2 h3 span {
     font-size: 14px;
     font-weight: 400;
+}
+
+.educa {
+    background-color: #111;
+    color: #fff;
+    padding-bottom: 50px;
 }

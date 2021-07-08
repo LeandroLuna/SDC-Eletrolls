@@ -5,28 +5,29 @@
     <meta charset="UTF-8" />
     <title>Shopping do Cidadão | Recrutamento</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   </head>
 
   <body>
     <header>
-      <a href="#" class="logo">Recrutamento</a>
+      <a href="#home" class="logo">Recrutamento</a>
       <div class="toggle"></div>
       <ul>
-        <li><a href="#">Quem somos</a></li>
-        <li><a href="#">Trabalhe conosco</a></li>
-        <li><a href="#">Candidate-se | Processos Seletivos</a></li>
-        <li><a href="#">Educa Cidadão</a></li>
+        <li><a href="#about">Quem somos</a></li>
+        <li><a href="#work">Trabalhe conosco</a></li>
+        <li><a href="#cand">Candidate-se | Processos Seletivos</a></li>
+        <li><a href="#educa">Educa Cidadão</a></li>
       </ul>
     </header>
 
-    <section class="banner">
+    <section class="banner" id="home">
       <div class="textBx">
         <h2><span> Shopping do Cidadão </span></h2>
         <h3>Democratizando atendimentos públicos!</h3>
-        <a href="#" class="btn">Sobre a gente</a>
+        <a href="#about" class="btn">Sobre a gente</a>
       </div>
     </section>
-    <section class="about">
+    <section class="about" id="about">
       <div class="heading">
         <h2>Quem somos</h2>
       </div>
@@ -50,7 +51,7 @@
       </div>
     </section>
 
-    <section class="work">
+    <section class="work" id="work">
       <div class="heading white">
         <h2>Trabalhe conosco</h2>
       </div>
@@ -82,24 +83,45 @@
       </div>
     </section>
 
-    <section class="candidate">
+    <section class="candidate" id="cand">
       <div class="heading black">
         <h2>Candidate-se</h2>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
       </div>
       <div class="content3">
         <div class="candBx">
-          <img src="/images/seletivo.jpg" class="img" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+            molestias id enim dolorum cupiditate? Fuga quas, facere cumque
+            facilis ipsa delectus itaque, atque dolore iure tenetur, rerum sint
+            consectetur accusamus.
+          </p>
           <h3>Processos Seletivos<br /><span>Em destaque: </span></h3>
         </div>
         <div class="candBx2">
-          <img src="/images/hackathon.jpg" class="img" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+            molestias id enim dolorum cupiditate? Fuga quas, facere cumque
+            facilis ipsa delectus itaque, atque dolore iure tenetur, rerum sint
+            consectetur accusamus.
+          </p>
           <h3>Hackathons<br /><span>Data do próximo evento: </span></h3>
         </div>
       </div>
     </section>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <section class="educa" id="educa">
+      <div class="heading white">
+        <h2>Educa Cidadão</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci
+          saepe delectus eveniet explicabo. Sequi unde eaque voluptatibus.
+        </p>
+      </div>
+    </section>
+
+    <!--FOOTER: https://www.youtube.com/watch?v=B4KZYsyuVOE&ab_channel=OnlineTutorials-->
+
     <script>
       $(window).scroll(function () {
         if ($(window).scrollTop()) {
@@ -107,6 +129,13 @@
         } else {
           $('header').removeClass('white');
         }
+      });
+
+      $('.slider').owlCarousel({
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 5000,
+        autoplayHoverPause: true,
       });
     </script>
   </body>
