@@ -266,4 +266,74 @@ video {
     background-color: #111;
     color: #fff;
     padding-bottom: 50px;
+    place-items: center;
+    text-align: center;
+}
+
+.educa .slider {
+    max-width: 1150px;
+    display: flex;
+    color: #111;
+    margin: auto;
+    justify-content: center;
+}
+
+.educa .slider .card {
+    background: #fff;
+    flex: 1;
+    margin: 0 10px;
+}
+
+.educa .slider .card .img {
+    height: 200px;
+    width: 100%;
+}
+
+.educa .slider .card img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.educa .slider .card .content4 {
+    padding: 10px 20px;
+}
+
+.slider .card .content4 .title {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.slider .card .content4 .sub-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #e74c3c;
+    line-height: 20px;
+}
+
+.card .content4 p {
+    text-align: justify;
+    margin: 10px 0;
+}
+
+.card .content4 .btn2 {
+    display: block;
+    text-align: left;
+    margin: 10px 0;
+}
+
+.card .content4 .btn2 button {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 17px;
+    padding: 5px 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.card .content4 .btn2 button:hover {
+    transform: scale(0.9);
 }
