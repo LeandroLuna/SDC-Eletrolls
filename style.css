@@ -213,6 +213,8 @@ video {
     padding: 60px 40px;
     margin: 20px;
     background: #3e8577;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 .candidate .content3 .candBx p {
@@ -241,6 +243,8 @@ video {
     padding: 60px 40px;
     margin: 20px;
     background: #1b0452;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 .candidate .content3 .candBx h3 {

@@ -96,7 +96,7 @@
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
       </div>
       <div class="content3">
-        <div class="candBx">
+        <div class="candBx" id="candBx">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
             molestias id enim dolorum cupiditate? Fuga quas, facere cumque
@@ -105,7 +105,7 @@
           </p>
           <h3>Processos Seletivos<br /><span>Em destaque: </span></h3>
         </div>
-        <div class="candBx2">
+        <div class="candBx2" id="candBx2">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
             molestias id enim dolorum cupiditate? Fuga quas, facere cumque
@@ -244,6 +244,14 @@
         autoplayTimeout: 5000,
         autoplayHoverPause: true,
       });
+
+      document.getElementById("candBx").onclick = function (){
+        window.open('');
+      };
+      document.getElementById("candBx2").onclick = function (){
+        window.open('');
+      };
+      
     </script>
   </body>
 </html>
