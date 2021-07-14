@@ -21,7 +21,7 @@
       <li><a href="#work">Trabalhe conosco</a></li>
       <li><a href="#cand">Candidate-se | Processos Seletivos</a></li>
       <li><a href="#educa">Educa Cidadão</a></li>
-      <li><a href="/subpages/signin+up/seletivos.html">Login</a></li>
+      <li><a href="/subpages/signin+up/login.html">Login</a></li>
     </ul>
   </header>
 
@@ -86,7 +86,8 @@
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
     </div>
     <div class="content3">
-      <div class="candBx" id="candBx">
+      <div class="candBx">
+        <a href="/subpages/seletivos.html">
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
           molestias id enim dolorum cupiditate? Fuga quas, facere cumque
@@ -94,8 +95,10 @@
           consectetur accusamus.
         </p>
         <h3>Processos Seletivos<br /><span>Em destaque: </span></h3>
+      </a>
       </div>
-      <div class="candBx2" id="candBx2">
+      <div class="candBx2">
+        <a href="/subpages/hackathons.html">
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
           molestias id enim dolorum cupiditate? Fuga quas, facere cumque
@@ -103,6 +106,7 @@
           consectetur accusamus.
         </p>
         <h3>Hackathons<br /><span>Data do próximo evento: </span></h3>
+      </a>
       </div>
     </div>
   </section>
@@ -127,7 +131,7 @@
             Consequatur, ullam.
           </p>
           <div class="btn2">
-            <button>Mais info.</button>
+            <a href="/subpages/cursos.html"><button>Mais info.</button></a>
           </div>
         </div>
       </div>
@@ -142,7 +146,7 @@
             Consequatur, ullam.
           </p>
           <div class="btn2">
-            <button>Mais info.</button>
+            <a href="/subpages/cursos.html"><button>Mais info.</button></a>
           </div>
         </div>
       </div>
@@ -157,7 +161,7 @@
             Consequatur, ullam.
           </p>
           <div class="btn2">
-            <button>Mais info.</button>
+            <a href="/subpages/cursos.html"><button>Mais info.</button></a>
           </div>
         </div>
       </div>
@@ -236,13 +240,15 @@
       autoplayHoverPause: true,
     });
 
+  </script>
+
+  <!-- COLOCAR DENTRO DO SCRIPT CASO SEJA NECESSARIO    
     document.getElementById("candBx").onclick = function () {
       window.open('');
     };
     document.getElementById("candBx2").onclick = function () {
       window.open('');
-    };
-  </script>
+    }; -->
 </body>
 
 </html>
