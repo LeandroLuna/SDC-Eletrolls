@@ -43,19 +43,43 @@
             <h2 class="title">Cadastrar</h2>
             <div class="input-field">
               <i class="fas fa-user"></i>
-              <input type="text" placeholder="Nome" />
+              <input
+                type="text"
+                placeholder="Nome"
+                required=""
+                oninvalid="this.setCustomValidity('O campo NOME é obrigatório!')"
+                oninput="setCustomValidity('')"
+              />
             </div>
             <div class="input-field">
               <i class="fas fa-envelope"></i>
-              <input type="text" placeholder="E-mail" />
+              <input
+                type="text"
+                placeholder="E-mail"
+                required=""
+                oninvalid="this.setCustomValidity('Insira um email válido!')"
+                oninput="setCustomValidity('')"
+              />
             </div>
             <div class="input-field">
               <i class="fas fa-lock"></i>
-              <input type="password" placeholder="Senha" />
+              <input
+                type="password"
+                placeholder="Senha"
+                id="password"
+                required=""
+                oninvalid="this.setCustomValidity('Insira uma senha!')"
+                oninput="setCustomValidity('')"
+              />
             </div>
             <div class="input-field">
               <i class="fas fa-lock"></i>
-              <input type="password" placeholder="Confirmar senha" />
+              <input
+                type="password"
+                placeholder="Confirmar senha"
+                id="confirmar_senha"
+                required
+              />
             </div>
             <input type="submit" value="Sign up" class="btn solid" />
 
