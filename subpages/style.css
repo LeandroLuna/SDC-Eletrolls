@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body .terms {
+    padding: 30px;
+    text-align: justify;
+}
+
+body .terms li {
+    margin-left: 50px;
+}
+
+.banner {
+    position: relative;
+    min-height: 100vh;
+    background: url(/images/banner.png);
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner h2 {
+    font-size: 3em;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    line-height: 1.5em;
+    -webkit-text-stroke: #111 2px;
+}
+
+.banner h2 span {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.banner h3 {
+    font-size: 1.5em;
+    color: #fff;
+    font-weight: 1000;
+    -webkit-text-stroke: rgb(0, 0, 0) 1px;
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #111;
+    transition: 0.5s;
+}
+
+header.white {
+    background: rgb(255, 255, 255);
+    padding: 20px 100px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.6);
+}
+
+header .logo {
+    color: #fff;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+header.white .logo {
+    color: #111;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+}
+
+header ul li {
+    position: relative;
+    list-style: none;
+}
+
+header ul li a {
+    position: relative;
+    display: inline-block;
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+header ul li a:hover {
+    transform: scale(0.95);
+}
+
+header ul li:nth-child(5) a {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+header.white ul li a {
+    color: #111;
+}
+
+header.white ul li:nth-child(5) a {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 15px 100px;
+    background: #04244D;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+footer .container .sec.aboutus {
+    width: 40%;
+}
+
+footer .container h2 {
+    position: relative;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+footer .container h2:before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #f00;
+}
+
+footer p {
+    color: #999;
+    font-style: italic;
+}
+
+.sci {
+    margin-top: 20px;
+    display: flex;
+}
+
+.sci li {
+    list-style: none;
+}
+
+.sci li a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.sci li a:hover {
+    background: #f00;
+}
+
+.sci li a .fa {
+    color: #fff;
+    font-size: 20px;
+}
+
+.quickLinks {
+    position: relative;
+    width: 25%;
+}
+
+.quickLinks ul li {
+    list-style: none;
+}
+
+.quickLinks ul li a {
+    color: #999;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.quickLinks ul li a:hover {
+    color: #f00;
+}
+
+.contact {
+    width: calc(35% - 60px);
+    margin-right: 0 !important;
+}
+
+.contact .info {
+    position: relative;
+}
+
+.contact .info li {
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.contact .info li span:nth-child(1) {
+    color: #fff;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.contact .info li span {
+    color: #999;
+}
+
+.contact .info li a {
+    color: #999;
+    text-decoration: none;
+}
+
+.contact .info li a:hover {
+    color: #f00;
+}
