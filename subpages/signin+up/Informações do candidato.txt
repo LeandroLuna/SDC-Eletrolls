@@ -1,0 +1,21 @@
+Informações pessoais:
+- Nome (Resgatar)
+- Endereço, cidade, estado e CEP
+- Número celular
+- Email (Resgatar)
+- CPF (Opcional)
+- Data de Nascimento
+- Sexo
+
+Educação e Formações acadêmicas:
+- Escolas frequentadas, diplomas, data de graduação
+- Certificações/Conquistas (Opcional)
+- Habilidades e Qualificações
+- Idiomas (Opcional)
+
+Experiência de trabalho (Últimas 3 posições)
+- Empregador
+- Data de entrada e saida do trabalho
+- Cargo de trabalho e responsabilidades
+- Salário (Opcional)
+- Motivo de Saida (Opcional)

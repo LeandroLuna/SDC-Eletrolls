@@ -10,7 +10,7 @@
 .banner {
     position: relative;
     min-height: 100vh;
-    background: url(/images/banner.png);
+    background: url(/myphp/images/banner.png);
     background-size: cover;
     background-position: right;
     display: flex;

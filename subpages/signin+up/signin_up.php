@@ -1,5 +1,5 @@
 <?php
-include './config.php'
+session_start();
 ?>
 
 <!DOCTYPE html>
@@ -16,20 +16,20 @@ include './config.php'
 
 <body>
   <header>
-    <a href="/index.html" class="logo">Recrutamento</a>
+    <a href="/myphp/index.html#home" class="logo">Recrutamento</a>
   </header>
   <div class="container">
     <div class="forms-container">
       <div class="signin-signup">
-        <form action="" class="sign-in-form">
+        <form action="./login.php" class="sign-in-form" method="POST">
           <h2 class="title">Entrar</h2>
           <div class="input-field">
             <i class="fas fa-user"></i>
-            <input type="text" placeholder="E-mail" />
+            <input name="lemail" type="email" placeholder="E-mail" />
           </div>
           <div class="input-field">
             <i class="fas fa-lock"></i>
-            <input type="password" placeholder="Senha" />
+            <input name="lsenha" type="password" placeholder="Senha" />
           </div>
           <input type="submit" value="Login" class="btn solid" />
 
@@ -41,25 +41,25 @@ include './config.php'
           </div>
         </form>
 
-        <form action="./new_user.php" class="sign-up-form" method="post">
+        <form action="./new_user.php" class="sign-up-form" method="POST">
           <h2 class="title">Cadastrar</h2>
           <div class="input-field">
             <i class="fas fa-user"></i>
-            <input name="nome" type="text" placeholder="Nome" required="" oninvalid="this.setCustomValidity('O campo NOME é obrigatório!')" oninput="setCustomValidity('')" />
+            <input name="cnome" type="text" placeholder="Nome" required="" oninvalid="this.setCustomValidity('O campo NOME é obrigatório!')" oninput="setCustomValidity('')" />
           </div>
           <div class="input-field">
             <i class="fas fa-envelope"></i>
-            <input name="email" type="text" placeholder="E-mail" required="" oninvalid="this.setCustomValidity('Insira um email válido!')" oninput="setCustomValidity('')" />
+            <input name="cemail" type="email" placeholder="E-mail" required="" oninvalid="this.setCustomValidity('Insira um email válido!')" oninput="setCustomValidity('')" />
           </div>
           <div class="input-field">
             <i class="fas fa-lock"></i>
-            <input name="senha" type="password" placeholder="Senha" id="password" required="" oninvalid="this.setCustomValidity('Insira uma senha!')" oninput="setCustomValidity('')" />
+            <input name="csenha" type="password" placeholder="Senha" id="password" required="" oninvalid="this.setCustomValidity('Insira uma senha!')" oninput="setCustomValidity('')" />
           </div>
           <div class="input-field">
             <i class="fas fa-lock"></i>
             <input type="password" placeholder="Confirmar senha" id="confirmar_senha" required />
           </div>
-          <input type="submit" value="Cadastar" class="btn solid" />
+          <input type="submit" value="Cadastar" name="cadastro" class="btn solid" />
 
           <p class="social-text">Ou cadastre com as redes sociais</p>
           <div class="social-media">

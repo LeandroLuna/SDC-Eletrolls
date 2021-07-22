@@ -1,11 +1,5 @@
 {
-    "cSpell.enabled": true,
+    "cSpell.enabled": false,
     "cSpell.ignoreWords": [
-        "aboutus",
-        "bx",
-        "cand",
-        "signin",
-        "signup",
-        "variavel"
     ]
 }
