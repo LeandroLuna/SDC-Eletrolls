@@ -11,7 +11,7 @@ $login_email = mysqli_real_escape_string($conn, $_POST['lemail']);
 $login_senha = mysqli_real_escape_string($conn, $_POST['lsenha']);
 
 
-$query = "select id, email from users where email = '{$login_email}' and senha = md5('{$login_senha}')";
+$query = "select id, email from usuarios where email = '{$login_email}' and senha = md5('{$login_senha}')";
 
 $result = mysqli_query($conn, $query);
 

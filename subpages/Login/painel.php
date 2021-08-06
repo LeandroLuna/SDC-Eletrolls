@@ -14,7 +14,6 @@ session_start();
 
 <body>
     <h1>
-        Olá, <?php echo $_SESSION['lemail']; ?>
         <br><a href='./logout.php'> Sair</a>
     </h1>
 </body>
