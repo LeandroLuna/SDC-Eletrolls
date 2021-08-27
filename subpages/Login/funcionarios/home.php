@@ -65,7 +65,11 @@ session_start();
 
 <script>
     $(document).ready(function() {
-        var table = $('#tabela').DataTable();
+        var table = $('#tabela').DataTable({
+            "language": {
+                "url": "//cdn.datatables.net/plug-ins/1.10.25/i18n/Portuguese.json"
+            }
+        })
 
         $('#tabela tbody').on('click', 'tr', function() {
             var data = table.row(this).data();
