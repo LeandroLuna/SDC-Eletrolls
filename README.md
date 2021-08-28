@@ -16,6 +16,59 @@ Complementando, para construção das tabelas envolvidas na construção do webs
 
 **Todos os direitos reservados.**
 
+## Organização dos arquivos
+
+/
+├── images
+│ ├── banner.png
+│ ├── curso1.jpeg
+│ ├── curso2.jpeg
+│ ├── curso3.jpeg
+│ ├── hackathon.jpg
+│ ├── img1.png
+│ └── seletivo.jpg
+├── subpages
+│ ├── Login
+│ │ ├── funcionarios
+│ │ │ ├── func_login.php
+│ │ │ ├── home.php
+│ │ │ └── style.css
+│ │ ├── login_homepage.php
+│ │ ├── login.html
+│ │ ├── login.php
+│ │ ├── logout.php
+│ │ ├── painel.php
+│ │ ├── style_painel.css
+│ │ ├── style.css
+│ │ └── verificar_login.php
+│ ├── signin+up
+│ │ ├── img
+│ │ │ ├── feeling_proud.svg
+│ │ │ └── hello.svg
+│ │ ├── new_user
+│ │ │ ├── code.js
+│ │ │ ├── edit_info.php
+│ │ │ ├── new_user.php
+│ │ │ └── style_newuser.css
+│ │ ├── app.js
+│ │ ├── code.js
+│ │ ├── config.php
+│ │ ├── login.php
+│ │ ├── new_user.html
+│ │ ├── new_user.php
+│ │ ├── sigin_up.php
+│ │ ├── style_newuser.css
+│ │ └── style.css
+│ ├── cursos.html
+│ ├── hackathons.html
+│ ├── privacy.html
+│ ├── style.css
+│ └── terms.html
+├── index.html
+├── style.css
+├── informações do candidato.txt
+└── README.md
+
 ## Demonstração de funcionamento
 
 _Vídeo com o funcionamento da plataforma:_ [Prótotipo](https://drive.google.com/file/d/1R-td5ytux6Ofzm6R_hB1mT5LBV38taW8/view?usp=sharing)
@@ -52,17 +105,87 @@ A partir de agora dividiremos a exemplificação em duas jornadas: **candidato**
 
 1. **Funcionário**:
    Clicando no menu “Login”, o funcionário será redirecionado para uma página de autenticação:
-   ![image](https://user-images.githubusercontent.com/29809108/131200153-9f69f798-2a2e-4516-9fcb-57212435cdac.png)   
-   
+   ![image](https://user-images.githubusercontent.com/29809108/131200153-9f69f798-2a2e-4516-9fcb-57212435cdac.png)
+
    Clicando sobre o banner **“RECRUTAMENTO”** o funcionário será redirecionado para página anterior – **“Menu Principal”**. E, utilizando-se do e-mail e senha, o funcionário poderá realizar a conexão para a página de gerenciamento de vagas e aplicações.
 
    - **Por motivos de segurança, o cadastro de um novo funcionário só poderá ser realizado por um outro antigo funcionário já logado na plataforma.**
 
    A próxima página é a de “Gerenciamento de Vagas”, página está a principal dos funcionários:
-   ![image](https://user-images.githubusercontent.com/29809108/131200162-bc3cb876-b909-4d8c-9cb0-63cdb1be8b40.png)   
-   
-   Aqui os funcionários – principalmente aqueles relacionados a recursos humanos – poderão **gerenciar todas as vagas, aplicações, e seus devidos status.**  
-   O funcionário terá total controle sobre ela; como **filtros de pesquisa** (utilizando o “Centro”, “Cargo” ou “Data de Abertura” como parâmetros) , **números de registros** (10, 25, 50 ou 100) e **manipulações (criação, atualização, exclusão e leitura).**
-   
-2. **Candidato**: 
+   ![image](https://user-images.githubusercontent.com/29809108/131200162-bc3cb876-b909-4d8c-9cb0-63cdb1be8b40.png)
 
+   Aqui os funcionários – principalmente aqueles relacionados a recursos humanos – poderão **gerenciar todas as vagas, aplicações, e seus devidos status.**  
+   O funcionário terá total controle sobre ela; como **filtros de pesquisa** (utilizando o “Centro”, “Cargo” ou “Data de Abertura” como parâmetros), **números de registros** (10, 25, 50 ou 100) e **manipulações (criação, atualização, exclusão e leitura).**
+
+2. **Candidato**:
+   2.1. **Processos Seletivos**:
+   2.2. **Hackathons**:
+
+## Instalação
+
+Para hospedar o website em um servidor local em sua máquina, você precisará do XAMPP:
+https://www.apachefriends.org/download.html
+
+Após isso no programa basta ativar "Apache" e "Mysql":
+[IMAGEM]
+
+Para conferir se está tudo corretamente configurado, acesse: http://localhost/dashboard/
+[IMAGEM]
+
+Em seguida clone o repositório do projeto: https://github.com/LeandroLuna/SDC-Eletrolls.git
+ou
+gh repo clone LeandroLuna/SDC-Eletrolls
+
+E por fim, na raiz do programa XAMPP - que instalamos previamente -, entre na pasta "/htdocs" e coloque a pasta que acabamos de baixar. Ficando algo similar à: C:\xampp\htdocs\SDC_Eletrolls\
+
+Para acessa-la basta abrir o navegador e pesquisar por: https://localhost/SDC_Eletrolls/ ou https://127.0.0.1/SDC_Eletrolls/
+
+## Agradecimentos
+
+Gostaria de agradecer ao nosso Scrum Master **Prof. Reinaldo Borges**. por seu apoio e orientação consistentes durante a execução deste projeto. Além disso, gostaria de agradecer ao restante da equipe de desenvolvimento da graduação por seus esforços colaborativos durante toda jornada. Também gostaria de agradecer à faculdade e professores da "**FIAP**" por sua participação e envolvimento no projeto, assim como a empresa "**Shopping do Cidadão**" pelas orientações, suporte e feedbacks nas mentorias.
+
+| Nome                               | Contato                  |
+| ---------------------------------- | ------------------------ |
+| Leandro de Jesus Luna              | leandro.j.luna@gmail.com |
+| Pedro Fernandes                    |                          |
+| Fabbio Augusto de Souza Moura Boli |                          |
+| Pedro Enrique Pereira Velosa       |                          |
+| Rafael Procopio Bondezam           |                          |
+
+Em nome de toda turma do 2º ano de engenharia da computação (2021), meus sinceros agradecimentos!
+
+## Inspirações e Referências
+
+Abaixo será listada todas inspirações e referências utilizadas para realização do projeto:
+
+- [Complete Login Register & Logout System | PHP & MySQL | Animated Epic Login Regis Form | Source Code - YouTube](https://www.youtube.com/watch?v=lIi9rqW-yJY&list=LL&index=3&ab_channel=PureCoding)
+- [Multi Step Form With Progress Bar Css Jquery | Step By Step Form With Progress Bar | Multi Step Form - YouTube](https://www.youtube.com/watch?v=saabXtJpEvY&list=LL&index=5&ab_channel=DeveloperDuniya)
+- [Registration, Login in PHP using Xampp server - YouTube](https://www.youtube.com/watch?v=fsQoA7NMhsU&list=LL&index=5&ab_channel=MahmudChoudhury)
+- [Tela de Login e Cadastro Interativa - HTML5 & CSS3 - [Parte 1] - YouTube](https://www.youtube.com/watch?v=GtsNZtzZiec&list=LL&index=7&ab_channel=GuilhermeChinaglia)
+- [Login form in PHP and MySQL | With Password Encryption - YouTube](https://www.youtube.com/watch?v=KSiIyZ3xw-A&list=LL&index=8&ab_channel=CodeFlix)
+- [Simple signup and login system with PHP and Mysql database | Full Tutorial | How to & source code - YouTube](https://www.youtube.com/watch?v=WYufSGgaCZ8&list=LL&index=9&ab_channel=QuickProgramming)
+- [Build a Complete Responsive Personal Portfolio Website using Html CSS &amp; Javascript from Scratch - YouTube](https://www.youtube.com/watch?v=UnlXPMKB-wE&ab_channel=OnlineTutorials)
+- [Responsive Footer Section Design using only HTML & CSS - YouTube](https://www.youtube.com/watch?v=f4J3uaNNYTE&ab_channel=CodingNepal)
+- [DataTables - CloudTables](https://datatables.net/)
+
+## Copyright
+
+Copyright (c) <2021> <copyright Eletrolls>
+
+      Permission is hereby granted, free of charge, to any person obtaining a copy
+      of this software and associated documentation files (the "Software"), to deal
+      in the Software without restriction, including without limitation the rights
+      to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+      copies of the Software, and to permit persons to whom the Software is
+      furnished to do so, subject to the following conditions:
+
+      The above copyright notice and this permission notice shall be included in
+      all copies or substantial portions of the Software.
+
+      THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+      IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+      FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+      AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+      LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+      OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+      THE SOFTWARE.
