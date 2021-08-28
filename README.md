@@ -174,7 +174,7 @@ Abaixo será listada todas inspirações e referências utilizadas para realiza�
 
 ## Copyright
 
-Copyright (c) <2021> <copyright Eletrolls>
+Copyright (c) <Eletrolls - 2021>
 
       Permission is hereby granted, free of charge, to any person obtaining a copy
       of this software and associated documentation files (the "Software"), to deal
