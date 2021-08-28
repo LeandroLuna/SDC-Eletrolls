@@ -17,57 +17,58 @@ Complementando, para construção das tabelas envolvidas na construção do webs
 **Todos os direitos reservados.**
 
 ## Organização dos arquivos
-
-/
-├── images
-│ ├── banner.png
-│ ├── curso1.jpeg
-│ ├── curso2.jpeg
-│ ├── curso3.jpeg
-│ ├── hackathon.jpg
-│ ├── img1.png
-│ └── seletivo.jpg
-├── subpages
-│ ├── Login
-│ │ ├── funcionarios
-│ │ │ ├── func_login.php
-│ │ │ ├── home.php
-│ │ │ └── style.css
-│ │ ├── login_homepage.php
-│ │ ├── login.html
-│ │ ├── login.php
-│ │ ├── logout.php
-│ │ ├── painel.php
-│ │ ├── style_painel.css
-│ │ ├── style.css
-│ │ └── verificar_login.php
-│ ├── signin+up
-│ │ ├── img
-│ │ │ ├── feeling_proud.svg
-│ │ │ └── hello.svg
-│ │ ├── new_user
-│ │ │ ├── code.js
-│ │ │ ├── edit_info.php
-│ │ │ ├── new_user.php
-│ │ │ └── style_newuser.css
-│ │ ├── app.js
-│ │ ├── code.js
-│ │ ├── config.php
-│ │ ├── login.php
-│ │ ├── new_user.html
-│ │ ├── new_user.php
-│ │ ├── sigin_up.php
-│ │ ├── style_newuser.css
-│ │ └── style.css
-│ ├── cursos.html
-│ ├── hackathons.html
-│ ├── privacy.html
-│ ├── style.css
-│ └── terms.html
-├── index.html
-├── style.css
-├── informações do candidato.txt
-└── README.md
+```
+   /
+   ├── images
+   │ ├── banner.png
+   │ ├── curso1.jpeg
+   │ ├── curso2.jpeg
+   │ ├── curso3.jpeg
+   │ ├── hackathon.jpg
+   │ ├── img1.png
+   │ └── seletivo.jpg
+   ├── subpages
+   │ ├── Login
+   │ │ ├── funcionarios
+   │ │ │ ├── func_login.php
+   │ │ │ ├── home.php
+   │ │ │ └── style.css
+   │ │ ├── login_homepage.php
+   │ │ ├── login.html
+   │ │ ├── login.php
+   │ │ ├── logout.php
+   │ │ ├── painel.php
+   │ │ ├── style_painel.css
+   │ │ ├── style.css
+   │ │ └── verificar_login.php
+   │ ├── signin+up
+   │ │ ├── img
+   │ │ │ ├── feeling_proud.svg
+   │ │ │ └── hello.svg
+   │ │ ├── new_user
+   │ │ │ ├── code.js
+   │ │ │ ├── edit_info.php
+   │ │ │ ├── new_user.php
+   │ │ │ └── style_newuser.css
+   │ │ ├── app.js
+   │ │ ├── code.js
+   │ │ ├── config.php
+   │ │ ├── login.php
+   │ │ ├── new_user.html
+   │ │ ├── new_user.php
+   │ │ ├── sigin_up.php
+   │ │ ├── style_newuser.css
+   │ │ └── style.css
+   │ ├── cursos.html
+   │ ├── hackathons.html
+   │ ├── privacy.html
+   │ ├── style.css
+   │ └── terms.html
+   ├── index.html
+   ├── style.css
+   ├── informações do candidato.txt
+   └── README.md
+```
 
 ## Demonstração de funcionamento
 
