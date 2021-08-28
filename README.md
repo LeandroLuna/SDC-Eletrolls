@@ -21,22 +21,27 @@ Complementando, para construção das tabelas envolvidas na construção do webs
 _Vídeo com o funcionamento da plataforma:_ [Prótotipo](https://drive.google.com/file/d/1R-td5ytux6Ofzm6R_hB1mT5LBV38taW8/view?usp=sharing)
 
 Ao adentrar no website o usuário se deparará com a página principal da plataforma:
-[IMAGEM]
+![image](https://user-images.githubusercontent.com/29809108/131199430-0a363fcd-2402-412d-a73e-e08e112f98e4.png)
+
 Nela, funcionários e candidatos poderão usufruir de uma navegação fluida através do **Header/Footer** da página, onde estarão dispostos informações referentes ao “Shopping do Cidadão”.
 
 As primeiras informações que encontramos no site são as divisões **“Quem Somos”** e **“Trabalhe Conosco”**:
-[IMAGEM]
+![image](https://user-images.githubusercontent.com/29809108/131199473-c91ad180-7ac1-49e3-aa40-0e07329c5ac9.png)
+
 É aqui que o usuário se deparará com textos de motivação a respeito da organização “Shopping do Cidadão”. Desta forma, ele terá um breve resumo e se sentirá **motivado** a continuar com as demais etapas do processo de candidatura.
 
 Acessando o menu **“Candidate-se | Processos Seletivos”**, o usuário será redirecionado para divisão onde ele poderá se registrar como um novo candidato:
-[IMAGEM]
+
+![image](https://user-images.githubusercontent.com/29809108/131200141-973ff3be-45d1-4fb5-9505-0e25588f9e51.png)
+
 Após isso, ele se encontrará em duas diferentes maneiras de se registrar, sendo essas **“Processos Seletivos”** e **“Hackathons”**:
 
 1.  **Processos seletivos:** Através dos processos seletivos os candidatos poderão se registrar e candidatar - da maneira clássica - para as mais diversas vagas em aberto no momento.
 2.  **Hackathons:** Eventos promovidos pela empresa parceira (“Shopping do Cidadão”) para recrutamento, seleção e desenvolvimento de novos talentos. Por intermédio desse recurso, poderá ser avaliadas diversas habilidades, tais como: **capacidade analítica, proatividade e agilidade, capacidade de comunicação, relacionamento etc.**
 
 Além disso, também poderá ser encontrado na página principal a divisão **“Educa Cidadão”**:
-[IMAGEM]
+![image](https://user-images.githubusercontent.com/29809108/131200148-cabf1933-83a6-4d80-a0c3-6abb94a7ae47.png)
+
 Planejando o desenvolvimento de futuros talentos e possível escassez de habilidades, foi-se elaborada à “Educa Cidadão”. **O programa consiste em capacitar candidatos, oferecendo cursos de desenvolvimento pessoal (“Soft Skills” e “Hard Skills”).**
 
 - Visando o incentivo ao uso do programa, **candidatos que se inscreverem nos cursos oferecidos pela “Educa Cidadão” terão prioridades nos processos seletivos que se inscreverem** – ver divisão anterior, **“Candidate-se | Processos Seletivos”**.
@@ -47,12 +52,17 @@ A partir de agora dividiremos a exemplificação em duas jornadas: **candidato**
 
 1. **Funcionário**:
    Clicando no menu “Login”, o funcionário será redirecionado para uma página de autenticação:
-   [IMAGEM]
+   ![image](https://user-images.githubusercontent.com/29809108/131200153-9f69f798-2a2e-4516-9fcb-57212435cdac.png)   
+   
    Clicando sobre o banner **“RECRUTAMENTO”** o funcionário será redirecionado para página anterior – **“Menu Principal”**. E, utilizando-se do e-mail e senha, o funcionário poderá realizar a conexão para a página de gerenciamento de vagas e aplicações.
 
    - **Por motivos de segurança, o cadastro de um novo funcionário só poderá ser realizado por um outro antigo funcionário já logado na plataforma.**
 
    A próxima página é a de “Gerenciamento de Vagas”, página está a principal dos funcionários:
-   [IMAGEM]
+   ![image](https://user-images.githubusercontent.com/29809108/131200162-bc3cb876-b909-4d8c-9cb0-63cdb1be8b40.png)   
+   
    Aqui os funcionários – principalmente aqueles relacionados a recursos humanos – poderão **gerenciar todas as vagas, aplicações, e seus devidos status.**  
    O funcionário terá total controle sobre ela; como **filtros de pesquisa** (utilizando o “Centro”, “Cargo” ou “Data de Abertura” como parâmetros) , **números de registros** (10, 25, 50 ou 100) e **manipulações (criação, atualização, exclusão e leitura).**
+   
+2. **Candidato**: 
+
