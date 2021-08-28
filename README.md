@@ -127,6 +127,7 @@ Para hospedar o website em um servidor local em sua máquina, você precisará d
 https://www.apachefriends.org/download.html
 
 Após isso no programa basta ativar "Apache" e "Mysql":
+
 ![image](https://user-images.githubusercontent.com/29809108/131224209-0af3eb5b-4b12-4cb7-9def-53513103b4e9.png)
 
 Para conferir se está tudo corretamente configurado, acesse: http://localhost/dashboard/
