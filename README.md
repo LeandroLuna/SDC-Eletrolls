@@ -127,14 +127,17 @@ Para hospedar o website em um servidor local em sua máquina, você precisará d
 https://www.apachefriends.org/download.html
 
 Após isso no programa basta ativar "Apache" e "Mysql":
-[IMAGEM]
+![image](https://user-images.githubusercontent.com/29809108/131224209-0af3eb5b-4b12-4cb7-9def-53513103b4e9.png)
 
 Para conferir se está tudo corretamente configurado, acesse: http://localhost/dashboard/
-[IMAGEM]
+![image](https://user-images.githubusercontent.com/29809108/131224216-b3c30fed-9c16-41bb-a163-ec3a4ecf8c7a.png)
 
 Em seguida clone o repositório do projeto: https://github.com/LeandroLuna/SDC-Eletrolls.git
+
 ou
+```
 gh repo clone LeandroLuna/SDC-Eletrolls
+```
 
 E por fim, na raiz do programa XAMPP - que instalamos previamente -, entre na pasta "/htdocs" e coloque a pasta que acabamos de baixar. Ficando algo similar à: C:\xampp\htdocs\SDC_Eletrolls\
 
