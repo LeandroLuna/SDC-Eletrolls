@@ -124,6 +124,7 @@ A partir de agora dividiremos a exemplificação em duas jornadas: **candidato**
 
    2.1 **Processos Seletivos**: Clicando sobre o banner de "**Processos Seletivos**" na divisão "**Candidate-se | Processos Seletivos**", será aberta uma página de 
    login/cadastro para os candidatos:
+   
    ![image](https://user-images.githubusercontent.com/29809108/131236927-3bf173e5-6e3d-478e-8ef2-7dac62b11505.png)
 
    A direita da página aberta os candidatos previamente cadastrado poderão realizar a conexão à "**área do candidato**" - tal área que será introduzida logo mais.
