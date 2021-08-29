@@ -106,6 +106,7 @@ _Dessa maneira, conclui-se a apresentação da página principal._
 A partir de agora dividiremos a exemplificação em duas jornadas: **candidato** e **funcionário**. Em cada uma dessas jornadas, introduziremos as etapas que cada um – funcionário e candidato – vivenciarão através da plataforma.
 
 1. **Funcionário**:
+   
    Clicando no menu “Login”, o funcionário será redirecionado para uma página de autenticação:
    ![image](https://user-images.githubusercontent.com/29809108/131200153-9f69f798-2a2e-4516-9fcb-57212435cdac.png)
 
@@ -120,18 +121,25 @@ A partir de agora dividiremos a exemplificação em duas jornadas: **candidato**
    O funcionário terá total controle sobre ela; como **filtros de pesquisa** (utilizando o “Centro”, “Cargo” ou “Data de Abertura” como parâmetros), **números de registros** (10, 25, 50 ou 100) e **manipulações (criação, atualização, exclusão e leitura).**
 
 2. **Candidato**:
-   2.1. **Processos Seletivos**: Clicando sobre o banner de "**Processos Seletivos**" na divisão "**Candidate-se | Processos Seletivos**", será aberta uma página de login/cadastro para os candidatos:
-   [IMAGEM]
+
+   2.1 **Processos Seletivos**: Clicando sobre o banner de "**Processos Seletivos**" na divisão "**Candidate-se | Processos Seletivos**", será aberta uma página de 
+   login/cadastro para os candidatos:
+   ![image](https://user-images.githubusercontent.com/29809108/131236927-3bf173e5-6e3d-478e-8ef2-7dac62b11505.png)
+
    A direita da página aberta os candidatos previamente cadastrado poderão realizar a conexão à "**área do candidato**" - tal área que será introduzida logo mais.
-   Enquanto na parte esquerda da página, ao clicar sobre o botão "**cadastrar**", os candidatos de primeira viagem poderão realizar suas inscrições no banco de dados da plataforma:
-   [Imagem]
+
+   Enquanto na parte esquerda da página, ao clicar sobre o botão "**cadastrar**", os candidatos de primeira viagem poderão realizar suas inscrições no banco de 
+   dados da plataforma:
+
+   ![image](https://user-images.githubusercontent.com/29809108/131236943-73056840-7505-497d-a736-8cf434990155.png)
+
    Após serem submetidas as informações iniciais, o candidato será redirecionado para uma nova página para complementar mais informações sobre ele:
-   [Imagem]
+
+   ![image](https://user-images.githubusercontent.com/29809108/131236951-98ebf5df-4e7c-46e9-ad98-bb9400281be3.png)
 
    - **Quanto maior o número de informações que candidato submeter, maiores serão a chance dele encontrar uma vaga mais ideal ao seu perfil.**
 
    Após isso, ele será redirecionado para última etapa do processo, onde será exibida as vagas em aberto de acordo com as informações submetidas anteriormente:
-   [Imagem]
 
    2.2. **Hackathons**:
 
