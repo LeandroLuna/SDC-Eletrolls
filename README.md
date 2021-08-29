@@ -17,6 +17,7 @@ Complementando, para construção das tabelas envolvidas na construção do webs
 **Todos os direitos reservados.**
 
 ## Organização dos arquivos
+
 ```
    /
    ├── images
@@ -119,7 +120,19 @@ A partir de agora dividiremos a exemplificação em duas jornadas: **candidato**
    O funcionário terá total controle sobre ela; como **filtros de pesquisa** (utilizando o “Centro”, “Cargo” ou “Data de Abertura” como parâmetros), **números de registros** (10, 25, 50 ou 100) e **manipulações (criação, atualização, exclusão e leitura).**
 
 2. **Candidato**:
-   2.1. **Processos Seletivos**:
+   2.1. **Processos Seletivos**: Clicando sobre o banner de "**Processos Seletivos**" na divisão "**Candidate-se | Processos Seletivos**", será aberta uma página de login/cadastro para os candidatos:
+   [IMAGEM]
+   A direita da página aberta os candidatos previamente cadastrado poderão realizar a conexão à "**área do candidato**" - tal área que será introduzida logo mais.
+   Enquanto na parte esquerda da página, ao clicar sobre o botão "**cadastrar**", os candidatos de primeira viagem poderão realizar suas inscrições no banco de dados da plataforma:
+   [Imagem]
+   Após serem submetidas as informações iniciais, o candidato será redirecionado para uma nova página para complementar mais informações sobre ele:
+   [Imagem]
+
+   - **Quanto maior o número de informações que candidato submeter, maiores serão a chance dele encontrar uma vaga mais ideal ao seu perfil.**
+
+   Após isso, ele será redirecionado para última etapa do processo, onde será exibida as vagas em aberto de acordo com as informações submetidas anteriormente:
+   [Imagem]
+
    2.2. **Hackathons**:
 
 ## Instalação
@@ -137,6 +150,7 @@ Para conferir se está tudo corretamente configurado, acesse: http://localhost/d
 Em seguida, clone o repositório do projeto: https://github.com/LeandroLuna/SDC-Eletrolls.git
 
 ou
+
 ```
 gh repo clone LeandroLuna/SDC-Eletrolls
 ```
@@ -178,7 +192,7 @@ Abaixo será listada todas inspirações e referências utilizadas para realiza�
 Copyright (c) <Eletrolls - 2021>
 
       Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal
-      in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell 
+      in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
       copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
       The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
