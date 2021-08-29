@@ -142,7 +142,9 @@ A partir de agora dividiremos a exemplificação em duas jornadas: **candidato**
 
    Após isso, ele será redirecionado para última etapa do processo, onde será exibida as vagas em aberto de acordo com as informações submetidas anteriormente:
 
-   2.2. **Hackathons**:
+   2.2. **Hackathons**: [Explicação de Funcionamento](https://github.com/LeandroLuna/SDC-Eletrolls/blob/main/subpages/educa_hackathon.md#hackathons)
+
+E por fim, o funcionamento do programa **["Educa Cidadão"](https://github.com/LeandroLuna/SDC-Eletrolls/blob/main/subpages/educa_hackathon.md#educa-cidad%C3%A3o).** 
 
 ## Instalação
 
