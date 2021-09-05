@@ -14,6 +14,9 @@ if (isset($_POST["cadastro"])) {
         $sql = "INSERT INTO usuarios (nome, email, senha) VALUES ('$nome', '$email', '$senha')";
         $resultado = mysqli_query($conn, $sql);
         if ($resultado) {
+            session_start();
+            $_SESSION['Nome'] = $nome;
+            $_SESSION['Email'] = $email;
             header('Location: ./new_user/new_user.php');
             exit();
         } else {

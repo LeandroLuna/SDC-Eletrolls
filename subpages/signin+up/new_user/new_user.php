@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -31,11 +35,11 @@
               <form action="./edit_info.php" method="POST">
                 <div class="form-group">
                   <label for="">Nome Completo</label>
-                  <input type="text" name="cnome_completo" placeholder="Nome e sobrenome" class="form-control" />
+                  <input type="text" name="cnome_completo" value="<?php echo $_SESSION['Nome'] ?>" placeholder="Nome e sobrenome" class="form-control" disabled />
                 </div>
                 <div class="form-group">
                   <label for="">E-mail</label>
-                  <input type="email" name="cemail" placeholder="E-mail para contato" class="form-control" />
+                  <input type="email" name="cemail" value="<?php echo $_SESSION['Email'] ?>" placeholder="E-mail para contato" class="form-control" disabled />
                 </div>
                 <div class="form-group">
                   <label for="">CPF</label>

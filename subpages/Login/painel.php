@@ -21,6 +21,9 @@ session_start();
             <li><a href="./logout.php">Sair</a></li>
         </ul>
     </header>
+
+    <br><br><br>
+    <h2>Olá, <?php echo $_SESSION['Nome'] ?>!</h2>
 </body>
 
 </html>
