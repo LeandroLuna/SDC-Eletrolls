@@ -7,10 +7,10 @@ $query = "SELECT * FROM vagas ";
 
 if (isset($_POST["search"]["value"])) {
     $query .= '
- WHERE centro LIKE "%' . $_POST["search"]["value"] . '%" 
- OR cargo LIKE "%' . $_POST["search"]["value"] . '%" 
- OR dt_abertura LIKE "%' . $_POST["search"]["value"] . '%" 
- ';
+    WHERE centro LIKE "%' . $_POST["search"]["value"] . '%" 
+    OR cargo LIKE "%' . $_POST["search"]["value"] . '%" 
+    OR dt_abertura LIKE "%' . $_POST["search"]["value"] . '%" 
+    ';
 }
 
 if (isset($_POST["order"])) {

@@ -14,6 +14,7 @@ input {
 
 header {
     position: fixed;
+    height: 55px;
     top: 0;
     left: 0;
     width: 100%;
@@ -58,4 +59,31 @@ header ul li a {
 
 header ul li a:hover {
     transform: scale(0.95);
+}
+
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+}
+
+.row.content {
+    height: 450px
+}
+
+.sidenav {
+    padding-top: 20px;
+    background-color: #f1f1f1;
+    height: 100%;
+}
+
+select.input-sm {
+    height: 40px;
+}
+
+.col-md-6 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    line-height: 35px;
 }

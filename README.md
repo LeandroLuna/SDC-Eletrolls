@@ -106,7 +106,7 @@ _Dessa maneira, conclui-se a apresentação da página principal._
 A partir de agora dividiremos a exemplificação em duas jornadas: **candidato** e **funcionário**. Em cada uma dessas jornadas, introduziremos as etapas que cada um – funcionário e candidato – vivenciarão através da plataforma.
 
 1. **Funcionário**:
-   
+
    Clicando no menu “Login”, o funcionário será redirecionado para uma página de autenticação:
    ![image](https://user-images.githubusercontent.com/29809108/131200153-9f69f798-2a2e-4516-9fcb-57212435cdac.png)
 
@@ -122,14 +122,14 @@ A partir de agora dividiremos a exemplificação em duas jornadas: **candidato**
 
 2. **Candidato**:
 
-   2.1 **Processos Seletivos**: Clicando sobre o banner de "**Processos Seletivos**" na divisão "**Candidate-se | Processos Seletivos**", será aberta uma página de 
+   2.1 **Processos Seletivos**: Clicando sobre o banner de "**Processos Seletivos**" na divisão "**Candidate-se | Processos Seletivos**", será aberta uma página de
    login/cadastro para os candidatos:
-   
+
    ![image](https://user-images.githubusercontent.com/29809108/131236927-3bf173e5-6e3d-478e-8ef2-7dac62b11505.png)
 
    A direita da página aberta os candidatos previamente cadastrado poderão realizar a conexão à "**área do candidato**" - tal área que será introduzida logo mais.
 
-   Enquanto na parte esquerda da página, ao clicar sobre o botão "**cadastrar**", os candidatos de primeira viagem poderão realizar suas inscrições no banco de 
+   Enquanto na parte esquerda da página, ao clicar sobre o botão "**cadastrar**", os candidatos de primeira viagem poderão realizar suas inscrições no banco de
    dados da plataforma:
 
    ![image](https://user-images.githubusercontent.com/29809108/131236943-73056840-7505-497d-a736-8cf434990155.png)
@@ -144,7 +144,7 @@ A partir de agora dividiremos a exemplificação em duas jornadas: **candidato**
 
    2.2. **Hackathons**: [Explicação de Funcionamento](https://github.com/LeandroLuna/SDC-Eletrolls/blob/main/subpages/educa_hackathon.md#hackathons)
 
-E por fim, o funcionamento do programa **["Educa Cidadão"](https://github.com/LeandroLuna/SDC-Eletrolls/blob/main/subpages/educa_hackathon.md#educa-cidad%C3%A3o).** 
+E por fim, o funcionamento do programa **["Educa Cidadão"](https://github.com/LeandroLuna/SDC-Eletrolls/blob/main/subpages/educa_hackathon.md#educa-cidad%C3%A3o).**
 
 ## Instalação
 
@@ -197,6 +197,7 @@ Abaixo será listada todas inspirações e referências utilizadas para realiza�
 - [Build a Complete Responsive Personal Portfolio Website using Html CSS &amp; Javascript from Scratch - YouTube](https://www.youtube.com/watch?v=UnlXPMKB-wE&ab_channel=OnlineTutorials)
 - [Responsive Footer Section Design using only HTML & CSS - YouTube](https://www.youtube.com/watch?v=f4J3uaNNYTE&ab_channel=CodingNepal)
 - [DataTables - CloudTables](https://datatables.net/)
+- [Live Vanilla DataTables CRUD with JavaScript PHP & MySql](https://www.webslesson.info/2021/08/live-vanilla-datatables-crud-with-javascript-php-mysql.html)
 
 ## Copyright
 
