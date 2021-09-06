@@ -198,6 +198,7 @@ Abaixo será listada todas inspirações e referências utilizadas para realiza�
 - [Responsive Footer Section Design using only HTML & CSS - YouTube](https://www.youtube.com/watch?v=f4J3uaNNYTE&ab_channel=CodingNepal)
 - [DataTables - CloudTables](https://datatables.net/)
 - [Live Vanilla DataTables CRUD with JavaScript PHP & MySql](https://www.webslesson.info/2021/08/live-vanilla-datatables-crud-with-javascript-php-mysql.html)
+- [Sidebar Menu | With Sub-Menus - Using HTML, CSS & JQuery](https://www.youtube.com/watch?v=5gnRgIq8-LQ&ab_channel=CodingSnow)
 
 ## Copyright
 
