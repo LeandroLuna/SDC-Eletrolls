@@ -16,15 +16,6 @@ session_start();
 </head>
 
 <body>
-    <!-- <header>
-        <a href="/myphp/index.html#home" class="logo">Recrutamento</a>
-        <div class="toggle"></div>
-        <ul>
-            <li><a href="./logout.php">Sair</a></li>
-        </ul>
-    </header>
-    <br><br><br> -->
-
     <!-- sidebar aqui -->
     <div class="wrapper">
         <div class="header">
