@@ -3,13 +3,14 @@ include('./database_connection.php');
 
 $column = array("id", "centro", "cargo", "dt_abertura");
 
-$query = "SELECT id, centro, cargo, dt_abertura FROM vagas ";
+$query = "SELECT * FROM vagas";
 
 if (isset($_POST["search"]["value"])) {
     $query .= '
     WHERE centro LIKE "%' . $_POST["search"]["value"] . '%" 
     OR cargo LIKE "%' . $_POST["search"]["value"] . '%" 
     OR dt_abertura LIKE "%' . $_POST["search"]["value"] . '%" 
+    OR id LIKE "%' . $_POST["search"]["value"] . '%" 
     ';
 }
 
@@ -18,6 +19,7 @@ if (isset($_POST["order"])) {
 } else {
     $query .= 'ORDER BY id DESC ';
 }
+
 $query1 = '';
 
 if ($_POST["length"] != -1) {

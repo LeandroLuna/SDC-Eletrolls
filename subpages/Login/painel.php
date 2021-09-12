@@ -46,7 +46,7 @@ session_start();
 
                     <div class="sub-menu">
                         <a href="#"><i class="fas fa-check-double"></i><span>Suas aplicações</span></a>
-                        <a href="#"><i class="fas fa-database"></i><span>Vagas em aberto</span></a>
+                        <a href="../signin+up/new_user/match/cadastro_vagas.php"><i class="fas fa-database"></i><span>Vagas em aberto</span></a>
                     </div>
                 </li>
 

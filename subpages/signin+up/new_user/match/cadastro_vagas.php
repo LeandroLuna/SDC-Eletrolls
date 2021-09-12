@@ -121,6 +121,7 @@ session_start();
                                     <th>Cargo</th>
                                     <th>Data de Abertura</th>
                                     <th>Score</th>
+                                    <th></th>
                                 </tr>
                             </thead>
                         </table>
