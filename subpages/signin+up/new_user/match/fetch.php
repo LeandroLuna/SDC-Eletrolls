@@ -1,7 +1,7 @@
 <?php
 include('./database_connection.php');
 
-$column = array("id", "centro", "cargo", "dt_abertura");
+$column = array("id", "centro", "cargo", "dt_abertura", "score");
 
 $query = "SELECT * FROM vagas";
 

@@ -104,7 +104,6 @@ session_start();
 
         <!-- container principal -->
         <div class="main-container">
-            <span id="success_message"></span>
             <div class="card">
                 <div class="card-header">
                     <div class="row">
@@ -120,7 +119,7 @@ session_start();
                                     <th>Centro</th>
                                     <th>Cargo</th>
                                     <th>Data de Abertura</th>
-                                    <th>Score</th>
+                                    <th>Compatibilidade</th>
                                     <th></th>
                                 </tr>
                             </thead>
