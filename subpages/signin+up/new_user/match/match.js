@@ -5,6 +5,7 @@ $(document).ready(function () {
     },
     processing: true,
     serverSide: true,
+    responsive: true,
     ajax: {
       url: 'fetch.php',
       type: 'POST',
@@ -77,7 +78,6 @@ $(document).ready(function () {
   }
 
   $('#tabela tbody').on('click', 'button', function () {
-    var dados_convertidos = JSON.stringify(table.row($(this).parents('tr')).data());
     var dados_nao_convertidos = table.row($(this).parents('tr')).data();
     $.ajax({
       type: "POST",
@@ -87,7 +87,7 @@ $(document).ready(function () {
       },
     }).done(function (msg) {
       alert("Usuario candidatado a vaga de ID " + dados_nao_convertidos[0] + " com sucesso");
-    });
+    })
   });
 
   $('#tabela tbody').on('click', 'td:not(:last-child)', 'tr', function () {

@@ -3,7 +3,8 @@ include('../config.php');
 session_start();
 $editar_info_nome = $_SESSION['Nome'];
 $editar_info_email = $_SESSION['Email'];
-
+$editar_infos = array($nome_completo, $email, $cpf, $data_nascimento, $endereco, $telefone, $genero, $instituicao1, $instituicao2, $instituicao3, $habilidades, $idiomas, $empregador1, $entrada_saida1, $cargo1, $salario1, $saida1, $empregador2, $entrada_saida2, $cargo2, $salario2, $saida2, $empregador3, $entrada_saida3, $cargo3, $salario3, $saida3);
+$_SESSION['infos'] = $editar_infos;
 
 if (isset($_POST["editar"])) {
     $nome_completo = mysqli_real_escape_string($conn, $_POST["cnome_completo"]);

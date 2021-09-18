@@ -107,7 +107,7 @@ session_start();
             <div class="card">
                 <div class="card-header">
                     <div class="row">
-                        <div class="col col-md-6">Vagas em aberto..</div>
+                        <div class="col col-md-6">Suas aplicações..</div>
                     </div>
                 </div>
                 <div class="card-body">
@@ -119,8 +119,7 @@ session_start();
                                     <th>Centro</th>
                                     <th>Cargo</th>
                                     <th>Data de Abertura</th>
-                                    <th>Compatibilidade</th>
-                                    <th></th>
+                                    <th>Situação</th>
                                 </tr>
                             </thead>
                         </table>
@@ -131,6 +130,6 @@ session_start();
     </div>
 </body>
 
-<script src="./match.js"></script>
+<script src="./aplicacoes.js"></script>
 
 </html>
