@@ -237,6 +237,3 @@ session_start();
 </script>
 
 </html>
-
-<!-- Mais funcionalidades para tabela: https://datatables.net/examples/index -->
-<!-- https://datatables.net/examples/api/ -->

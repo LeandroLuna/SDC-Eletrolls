@@ -56,8 +56,8 @@ session_start();
                     </a>
 
                     <div class="sub-menu">
-                        <a href="./aplicacoes.php"><i class="fas fa-check-double"></i><span>Suas aplicações</span></a>
-                        <a href="./cadastro_vagas.php"><i class="fas fa-database"></i><span>Vagas em aberto</span></a>
+                        <a href="../aplicacoes.php"><i class="fas fa-check-double"></i><span>Suas aplicações</span></a>
+                        <a href="../cadastro_vagas.php"><i class="fas fa-database"></i><span>Vagas em aberto</span></a>
                     </div>
                 </li>
 
@@ -105,34 +105,39 @@ session_start();
         <!-- container principal -->
         <div class="main-container" style="padding-bottom: 20px;">
             <h4>Informações Pessoais</h4>
-            <form action="../../../new_user/edit_info.php" method="POST">
+            <form action="./actions.php" method="POST">
                 <div class="form-group">
                     <label for="">Nome Completo</label>
-                    <input type="text" name="" value="<?php echo $_SESSION['Nome'] ?>" placeholder="Nome e sobrenome" id="" class="form-control" />
-                </div>
-                <div class="form-group">
-                    <label for="">E-mail</label>
-                    <input type="email" name="" value="<?php echo $_SESSION['Email'] ?>" placeholder="E-mail para contato" id="" class="form-control" />
+                    <input type="text" name="cnome_completo" value="<?php echo $_SESSION['Nome'] ?>" placeholder="Nome e sobrenome" id="" class="form-control" />
                 </div>
                 <div class="form-group">
                     <label for="">CPF</label>
-                    <input type="text" name="" placeholder="Ex: 000.000.000-00" id="" class="form-control" />
+                    <input type="text" name="ccpf" value="<?php echo $_SESSION['infos'][2] ?>" maxlength="11" placeholder="Ex: 000.000.000-00" id="" class="form-control" />
                 </div>
                 <div class="form-group">
                     <label for="">Data de Nascimento</label>
-                    <input type="text" name="" placeholder="Ex: 01-12-1999 " id="" class="form-control" />
+                    <input type="date" name="cnascimento" value="<?php echo $_SESSION['infos'][3] ?>" placeholder="Ex: 01-12-1999 " id="" class="form-control" />
                 </div>
                 <div class="form-group">
                     <label for="">Endereço</label>
-                    <input type="text" name="" placeholder="Ex: Av. Paulista, 99 - São Paulo - SP - 99999-99 " id="" class="form-control" />
+                    <input type="text" name="cendereco" value="<?php echo $_SESSION['infos'][4] ?>" placeholder="Ex: Av. Paulista, 99 - São Paulo - SP - 99999-99 " id="" class="form-control" />
                 </div>
                 <div class="form-group">
                     <label for="">Telefone</label>
-                    <input type="text" name="" placeholder="Número para eventuais contatos. Ex: (99)99999-9999" id="" class="form-control" />
+                    <input type="tel" pattern="\([0-9]{2}\)[0-9]{5}-[0-9]{4}" name="ctelefone" value="<?php echo $_SESSION['infos'][5] ?>" placeholder="Número para eventuais contatos. Ex: (99)99999-9999" id="" class="form-control" />
                 </div>
                 <div class="form-group">
                     <label for="">Gênero</label>
-                    <select class="custom-select myinput" name="class" id="class">
+                    <select class="custom-select myinput" name="cgenero" id="class">
+                        <option selected="selected">
+                            <?php
+                            if ($_SESSION['infos'][6] == 'female') {
+                                echo "Mulher";
+                            } else {
+                                echo "Homem";
+                            }
+                            ?>
+                        </option>
                         <option value="male">Homem</option>
                         <option value="female">Mulher</option>
                         <option value="other">Outros</option>
@@ -144,40 +149,40 @@ session_start();
                     <div class="form-group">
                         <label for="">Instituições Frequentadas | Diploma | Data de
                             Conclusão</label>
-                        <input type="text" name="" placeholder="Instituição 1" id="" class="form-control" />
-                        <input type="text" name="" placeholder="Instituição 2" id="" class="form-control" />
-                        <input type="text" name="" placeholder="Instituição 3" id="" class="form-control" />
+                        <input type="text" name="cinstituicao1" value="<?php echo $_SESSION['infos'][7] ?>" placeholder="Instituição 1" id="" class="form-control" />
+                        <input type="text" name="cinstituicao2" value="<?php echo $_SESSION['infos'][8] ?>" placeholder="Instituição 2" id="" class="form-control" />
+                        <input type="text" name="cinstituicao3" value="<?php echo $_SESSION['infos'][9] ?>" placeholder="Instituição 3" id="" class="form-control" />
                     </div>
                     <div class="form-group">
                         <label for="">Habilidades e Qualificações</label>
-                        <input type="text" name="" placeholder="Ex: Excel Avançado, PowerBI, Python.. (SEPARE POR ',')" id="" class="form-control" />
+                        <input type="text" name="chabilidades" value="<?php echo $_SESSION['infos'][10] ?>" placeholder="Ex: Excel Avançado, PowerBI, Python.. (SEPARE POR ',')" id="" class="form-control" />
                     </div>
                     <div class="form-group">
                         <label for="">Idiomas</label>
-                        <input type="text" name="" placeholder="Ex: PT NATIVO, EN C2, FR A1.. (SEPARE POR ',')" id="" class="form-control" />
+                        <input type="text" name="cidiomas" value="<?php echo $_SESSION['infos'][11] ?>" placeholder="Ex: PT NATIVO, EN C2, FR A1.. (SEPARE POR ',')" id="" class="form-control" />
                     </div>
 
                     <h4>Experiência de trabalho</h4>
                     <form action="">
                         <div class="form-group">
                             <label for="">Última Experiência</label>
-                            <input type="text" name="" placeholder="Empregador" id="" class="form-control" />
-                            <input type="text" name="" placeholder="Data de entrada e saida. Ex: 12/2018 - 06/2020" id="" class="form-control" /><input type="text" name="" placeholder="Cargo e Responsabilidades" id="" class="form-control" /><input type="text" name="" placeholder="Salário" id="" class="form-control" /><input type="text" name="" placeholder="Motivo de Saída" id="" class="form-control" />
+                            <input type="text" name="cempregador1" value="<?php echo $_SESSION['infos'][12] ?>" placeholder="Empregador" id="" class="form-control" />
+                            <input type="text" name="centrada_saida1" value="<?php echo $_SESSION['infos'][13] ?>" placeholder="Data de entrada e saida. Ex: 12/2018 - 06/2020" id="" class="form-control" /><input type="text" name="ccargo1" value="<?php echo $_SESSION['infos'][14] ?>" placeholder="Cargo e Responsabilidades" id="" class="form-control" /><input type="text" name="csalario1" value="<?php echo $_SESSION['infos'][15] ?>" placeholder="Salário" id="" class="form-control" /><input type="text" name="csaida1" value="<?php echo $_SESSION['infos'][16] ?>" placeholder="Motivo de Saída" id="" class="form-control" />
                         </div>
                         <div class="form-group">
                             <label for="">Penúltima Experiência</label>
-                            <input type="text" name="" placeholder="Empregador" id="" class="form-control" />
-                            <input type="text" name="" placeholder="Data de entrada e saida. Ex: 12/2018 - 06/2020" id="" class="form-control" /><input type="text" name="" placeholder="Cargo e Responsabilidades" id="" class="form-control" /><input type="text" name="" placeholder="Salário" id="" class="form-control" /><input type="text" name="" placeholder="Motivo de Saída" id="" class="form-control" />
+                            <input type="text" name="cempregado2" value="<?php echo $_SESSION['infos'][17] ?>" placeholder="Empregador" id="" class="form-control" />
+                            <input type="text" name="centrada_saida2" value="<?php echo $_SESSION['infos'][18] ?>" placeholder="Data de entrada e saida. Ex: 12/2018 - 06/2020" id="" class="form-control" /><input type="text" name="ccargo2" value="<?php echo $_SESSION['infos'][19] ?>" placeholder="Cargo e Responsabilidades" id="" class="form-control" /><input type="text" name="csalario2" value="<?php echo $_SESSION['infos'][20] ?>" placeholder="Salário" id="" class="form-control" /><input type="text" name="csaida2" value="<?php echo $_SESSION['infos'][21] ?>" placeholder="Motivo de Saída" id="" class="form-control" />
                         </div>
                         <div class="form-group">
                             <label for="">Antepenúltima Experiência</label>
-                            <input type="text" name="" placeholder="Empregador" id="" class="form-control" />
-                            <input type="text" name="" placeholder="Data de entrada e saida. Ex: 12/2018 - 06/2020" id="" class="form-control" /><input type="text" name="" placeholder="Cargo e Responsabilidades" id="" class="form-control" /><input type="text" name="" placeholder="Salário" id="" class="form-control" /><input type="text" name="" placeholder="Motivo de Saída" id="" class="form-control" />
+                            <input type="text" name="cempregador3" value="<?php echo $_SESSION['infos'][22] ?>" placeholder="Empregador" id="" class="form-control" />
+                            <input type="text" name="centrada_saida3" value="<?php echo $_SESSION['infos'][23] ?>" placeholder="Data de entrada e saida. Ex: 12/2018 - 06/2020" id="" class="form-control" /><input type="text" name="ccargo3" value="<?php echo $_SESSION['infos'][24] ?>" placeholder="Cargo e Responsabilidades" id="" class="form-control" /><input type="text" name="csalario3" value="<?php echo $_SESSION['infos'][25] ?>" placeholder="Salário" id="" class="form-control" /><input type="text" name="csaida3" value="<?php echo $_SESSION['infos'][26] ?>" placeholder="Motivo de Saída" id="" class="form-control" />
                         </div>
 
                         <div class="buttons">
-                            <input type="button" value="Excluir cadastro" class="excluir" />
-                            <input type="button" value="Atualizar informações" class="submit" />
+                            <input type="submit" value="Excluir cadastro" class="excluir" name="excluir" />
+                            <input type="submit" value="Atualizar informações" class="atualizar" name="atualizar" />
                         </div>
         </div>
     </div>
@@ -186,6 +191,14 @@ session_start();
 <script type="text/javascript">
     $('.sidebar-btn').click(function() {
         $('.wrapper').toggleClass('collapse');
+    });
+
+    $('.excluir').click(function() {
+        alert('Até breve, candidato! Redirecionando para página inicial..!')
+    });
+
+    $('.atualizar').click(function() {
+        alert('Informações atualizadas!')
     });
 </script>
 

@@ -3,8 +3,7 @@ include('../config.php');
 session_start();
 $editar_info_nome = $_SESSION['Nome'];
 $editar_info_email = $_SESSION['Email'];
-$editar_infos = array($nome_completo, $email, $cpf, $data_nascimento, $endereco, $telefone, $genero, $instituicao1, $instituicao2, $instituicao3, $habilidades, $idiomas, $empregador1, $entrada_saida1, $cargo1, $salario1, $saida1, $empregador2, $entrada_saida2, $cargo2, $salario2, $saida2, $empregador3, $entrada_saida3, $cargo3, $salario3, $saida3);
-$_SESSION['infos'] = $editar_infos;
+
 
 if (isset($_POST["editar"])) {
     $nome_completo = mysqli_real_escape_string($conn, $_POST["cnome_completo"]);
@@ -36,6 +35,9 @@ if (isset($_POST["editar"])) {
     $saida3 = mysqli_real_escape_string($conn, $_POST["csaida3"]);
 
     $query = "UPDATE usuarios SET cpf='$cpf', data_nascimento='$data_nascimento', endereco='$endereco', telefone='$telefone', genero='$genero',instituicao1='$instituicao1',instituicao2='$instituicao2',instituicao1='$instituicao3', habilidades='$habilidades', idiomas='$idiomas', empregador1='$empregador1', entrada_saida1='$entrada_saida1', cargo1='$cargo1', salario1='$salario1', saida1='$saida1', empregador2='$empregador2', entrada_saida2='$entrada_saida2', cargo2='$cargo2', salario2='$salario2', saida2='$saida2', empregador3='$empregador3', entrada_saida3='$entrada_saida3', cargo3='$cargo3', salario3='$salario3', saida3='$saida3' WHERE nome = '$editar_info_nome' && email = '$editar_info_email'";
+
+    $editar_infos = array($nome_completo, $email, $cpf, $data_nascimento, $endereco, $telefone, $genero, $instituicao1, $instituicao2, $instituicao3, $habilidades, $idiomas, $empregador1, $entrada_saida1, $cargo1, $salario1, $saida1, $empregador2, $entrada_saida2, $cargo2, $salario2, $saida2, $empregador3, $entrada_saida3, $cargo3, $salario3, $saida3);
+    $_SESSION['infos'] = $editar_infos;
 
     if (mysqli_query($conn, $query)) {
         echo "<script type='text/javascript'>alert('Usuario cadastrado com sucesso! Redirecionando para painel de vagas..');</script>";

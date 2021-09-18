@@ -272,7 +272,7 @@ select.input-sm {
     font-size: 20px;
 }
 
-.main-container .submit,
+.main-container .atualizar,
 .main-container .excluir {
     font-size: 18px;
     margin-left: 27%;
@@ -289,7 +289,7 @@ select.input-sm {
     transition: 0.5s;
 }
 
-.main-container .submit {
+.main-container .atualizar {
     background-color: green;
 }
 
@@ -297,6 +297,6 @@ select.input-sm {
     background-color: #e74c3c;
 }
 
-.main-container .submit:hover {
+.main-container .atualizar:hover {
     background-color: rgba(0, 128, 0, 0.795);
 }
