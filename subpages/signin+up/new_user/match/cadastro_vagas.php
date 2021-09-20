@@ -131,6 +131,21 @@ session_start();
     </div>
 </body>
 
+<!-- Modal Nova -->
+<div class="modal fade" tabindex="-1" role="dialog" id="myModal">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Descrição da vaga</h4>
+            </div>
+            <div class="modal-body">
+                <p> O candidato escolhido irá oferecer suporte para nossa equipe executiva e todos os nossos locais remotos para uma ampla variedade de aplicações de software críticas. O analista programador irá também desenvolver scripts personalizados e aplicações baseadas em nossa lista de prioridades do projeto, testar aplicativos regularmente, criar patches de software para plataformas mais antigas e realizar manutenção de rotina em todos os sistemas legados.</p>
+
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
 <script src="./match.js"></script>
 
 </html>

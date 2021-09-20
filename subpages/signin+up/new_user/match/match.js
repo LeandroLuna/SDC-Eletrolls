@@ -92,15 +92,8 @@ $(document).ready(function () {
 
   $('#tabela tbody').on('click', 'td:not(:last-child)', 'tr', function () {
     var data = table.row(this).data();
-    alert(
-      'Você clicou na vaga "' +
-      data[2] +
-      '", do centro "' +
-      data[1] +
-      '" de ID: ' +
-      data[0]
-    );
-
+    alert('Você clicou na vaga "' + data[2] + '" , do centro "' + data[1] + '" de ID: ' + data[0]);
+    $(' #myModal').modal('show');
   });
 
   $('.sidebar-btn').click(function () {

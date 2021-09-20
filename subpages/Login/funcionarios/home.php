@@ -22,6 +22,7 @@ session_start();
     <script src="https://cdn.datatables.net/1.10.12/js/dataTables.bootstrap.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="https://markcell.github.io/jquery-tabledit/assets/js/tabledit.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.2.9/css/responsive.bootstrap.min.css"></script>
 
     <link rel="stylesheet" href="./style.css" />
 
@@ -66,7 +67,7 @@ session_start();
     </div>
 </body>
 
-
+<!-- Inicio Modal -->
 <div class="modal" id="vaga_modal" tabindex="-1">
     <form method="post" id="vaga_form">
         <div class="modal-dialog">
@@ -103,11 +104,69 @@ session_start();
 </div>
 
 <div class="modal-backdrop fade show" id="modal_backdrop" style="visibility: hidden;"></div>
+<!-- Fim Modal -->
+
+
+
+<!-- Modal Nova -->
+<div class="modal fade" tabindex="-1" role="dialog" id="myModal">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Relação de candidatos inscritos na vaga</h4>
+            </div>
+            <div class="modal-body">
+                <!-- <p>One fine body&hellip;</p> -->
+                <table id="exemplo" class="table table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Email</th>
+                            <th>Telefone</th>
+                            <th>Endereco</th>
+                            <th>Score</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Leonidas</td>
+                            <td>Leonidas@gmail.com</td>
+                            <td>(11)98877-5542</td>
+                            <td>Av. Paulista, SP</td>
+                            <td>76.6%</td>
+                        </tr>
+                        <tr>
+                            <td>Mr Octopus</td>
+                            <td>octo@gmail.com</td>
+                            <td>(11)98374-1232</td>
+                            <td>Itaquera, SP</td>
+                            <td>43.5%</td>
+                        </tr>
+                        <tr>
+                            <td>Michal Jackson</td>
+                            <td>billie.jean@gmail.com</td>
+                            <td>(11)99485-2343</td>
+                            <td>Murumbi, SP</td>
+                            <td>70.2%</td>
+                        </tr>
+                        <tr>
+                            <td>Pedro Alvares</td>
+                            <td>Cabral@gmail.com</td>
+                            <td>(11)97253-0343</td>
+                            <td>Vila Mariana, SP</td>
+                            <td>80.9%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
 
 <script>
     $(document).ready(function() {
         var table = $('#tabela').DataTable({
-            "language": {
+            " language": {
                 "url": "//cdn.datatables.net/plug-ins/1.11.1/i18n/pt_br.json"
             },
             "processing": true,
@@ -118,9 +177,8 @@ session_start();
             "ajax": {
                 url: "fetch.php",
                 type: "POST"
-            }
+            },
         });
-
         $('#tabela').on('draw.dt', function() {
             $('#tabela').Tabledit({
                 url: 'action.php',
@@ -172,35 +230,23 @@ session_start();
             _('modal_title').innerHTML = 'Criar vaga';
             _('action_button').innerHTML = 'Criar';
         }
-
         _('add_data').onclick = function() {
             open_modal();
             reset_data();
         }
-
         _('close_modal').onclick = function() {
             close_modal();
         }
-
         _('action_button').onclick = function() {
-
             var form_data = new FormData(_('vaga_form'));
-
             _('action_button').disabled = true;
-
             fetch('action.php', {
-
                 method: "POST",
-
                 body: form_data
-
             }).then(function(response) {
                 return response.json();
-
             }).then(function(responseData) {
-
                 _('action_button').disabled = false;
-
                 if (responseData.success) {
                     close_modal();
                     _('success_message').innerHTML = responseData.success;
@@ -211,27 +257,33 @@ session_start();
                     } else {
                         _('centro_error').innerHTML = '';
                     }
-
                     if (responseData.cargo_error) {
                         _('cargo_error').innerHTML = responseData.cargo_error;
                     } else {
                         _('cargo_error').innerHTML = '';
                     }
-
                     if (responseData.dt_abertura_error) {
                         _('dt_abertura_error').innerHTML = responseData.dt_abertura_error;
                     } else {
                         _('dt_abertura_error').innerHTML = '';
                     }
                 }
-
             });
-
         }
-
         $('#tabela tbody').on('click', 'td:not(:last-child)', 'tr', function() {
             var data = table.row(this).data();
-            alert('Você clicou na vaga "' + data[2] + '", do centro "' + data[1] + '" de ID: ' + data[0]);
+            alert('Você clicou na vaga "' + data[2] + '" , do centro "' + data[1] + '" de ID: ' + data[0]);
+            $(' #myModal').modal('show');
+            $(document).ready(function() {
+                $('#exemplo').DataTable({
+                    "language": {
+                        "url": "//cdn.datatables.net/plug-ins/1.11.1/i18n/pt_br.json"
+                    },
+                    "order": [
+                        [4, "desc"]
+                    ],
+                });
+            });
         });
     });
 </script>
