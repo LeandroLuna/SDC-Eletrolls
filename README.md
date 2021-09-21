@@ -27,10 +27,18 @@ Complementando, para construção das tabelas envolvidas na construção do webs
    │ ├── curso3.jpeg
    │ ├── hackathon.jpg
    │ ├── img1.png
+   │ ├── user.png
+   │ ├── wireframe.png
    │ └── seletivo.jpg
    ├── subpages
    │ ├── Login
    │ │ ├── funcionarios
+   │ │ │ ├── library
+   | │ │ │ ├── jstable.css
+   | │ │ │ └── jstable.min.js
+   │ │ │ ├── action.php
+   │ │ │ ├── database_connection.php
+   │ │ │ ├── fetch.php
    │ │ │ ├── func_login.php
    │ │ │ ├── home.php
    │ │ │ └── style.css
@@ -47,6 +55,21 @@ Complementando, para construção das tabelas envolvidas na construção do webs
    │ │ │ ├── feeling_proud.svg
    │ │ │ └── hello.svg
    │ │ ├── new_user
+   │ │ │ ├── match
+   | │ │ │ ├── Pefil
+   | | │ │ │ ├── actions.php
+   | | │ │ │ ├── alterar_cadastro.php
+   | | │ │ │ └── style.css
+   | │ │ │ ├── action.php
+   | │ │ │ ├── aplicacoes.js
+   | │ │ │ ├── aplicacoes.php
+   | │ │ │ ├── aplicacoes_db.php
+   | │ │ │ ├── cadastro_vagas.php
+   | │ │ │ ├── database_connection.php
+   | │ │ │ ├── fetch.php
+   | │ │ │ ├── match.js
+   | │ │ │ ├── style.css
+   | │ │ │ ├── tempCodeRunnerFile.php
    │ │ │ ├── code.js
    │ │ │ ├── edit_info.php
    │ │ │ ├── new_user.php
@@ -61,10 +84,12 @@ Complementando, para construção das tabelas envolvidas na construção do webs
    │ │ ├── style_newuser.css
    │ │ └── style.css
    │ ├── cursos.html
+   │ ├── educa_hackathon.md
    │ ├── hackathons.html
    │ ├── privacy.html
    │ ├── style.css
    │ └── terms.html
+   ├── .htacess
    ├── index.html
    ├── style.css
    ├── informações do candidato.txt
