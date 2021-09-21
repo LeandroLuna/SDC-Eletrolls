@@ -140,10 +140,25 @@ A partir de agora dividiremos a exemplificação em duas jornadas: **candidato**
    - **Por motivos de segurança, o cadastro de um novo funcionário só poderá ser realizado por um outro antigo funcionário já logado na plataforma.**
 
    A próxima página é a de “Gerenciamento de Vagas”, página está a principal dos funcionários:
-   ![image](https://user-images.githubusercontent.com/29809108/131200162-bc3cb876-b909-4d8c-9cb0-63cdb1be8b40.png)
+   ![image](https://user-images.githubusercontent.com/29809108/134224541-f4074695-cb6b-4f92-a7f6-ac61ac0f3c28.png)
 
    Aqui os funcionários – principalmente aqueles relacionados a recursos humanos – poderão **gerenciar todas as vagas, aplicações, e seus devidos status.**  
-   O funcionário terá total controle sobre ela; como **filtros de pesquisa** (utilizando o “Centro”, “Cargo” ou “Data de Abertura” como parâmetros), **números de registros** (10, 25, 50 ou 100) e **manipulações (criação, atualização, exclusão e leitura).**
+   O funcionário terá total controle sobre ela; como **filtros de pesquisa** (utilizando o “Centro”, “Cargo” ou “Data de Abertura” como parâmetros), **números de registros** (10, 25, 50 ou 100) e **manipulações (atualização, exclusão e leitura).**
+   ![image](https://user-images.githubusercontent.com/29809108/134244014-ed677a6d-1db6-4b9d-b4c5-724a8468e512.png)
+   ![image](https://user-images.githubusercontent.com/29809108/134243756-aa1e56fb-7bf2-4124-86d6-69451ee22740.png)
+   ![image](https://user-images.githubusercontent.com/29809108/134243789-e199fe35-d0cb-4336-bb89-a2549b91dfae.png)
+
+   Além disso, no topo superior direito da tabela, tem o botão "Criar nova vaga":
+   ![image](https://user-images.githubusercontent.com/29809108/134243256-38b92619-237f-46f5-8038-352ce50de171.png)
+
+   Ao clicar sobre ele, uma nova divisão - conhecida pelos programadores como divisão modal - será apresentada ao funcionário. Nessa tela, o funcionário poderá criar uma nova vaga preenchendo os campos "Centro" e "Cargo", e selecionando a "Data de Abertura".
+
+   E por fim, para concluirmos o paínel dos funcionários, ao clicar sobre quaisquer umas das vagas será aberta a relação de candidatos inscritos naquela vaga em questão:
+   - **As informações de contato do candidato estarão em destaque, assim agilizando à empresa o processo de entrar em contato com seus usuários.**
+   ![image](https://user-images.githubusercontent.com/29809108/134244752-ccd11ff2-2d6b-4980-b4fa-d62d665c3ac0.png)
+   - **Semelhantemente a tabela anterior, todos os filtros de controle se aplicam a tabela integrada. Por padrão, os candidatos serão dispostos em ordem decrescente em relação aos seus devidos "Scores".**
+   
+
 
 2. **Candidato**:
 
@@ -166,7 +181,35 @@ A partir de agora dividiremos a exemplificação em duas jornadas: **candidato**
    - **Quanto maior o número de informações que candidato submeter, maiores serão a chance dele encontrar uma vaga mais ideal ao seu perfil.**
 
    Após isso, ele será redirecionado para última etapa do processo, onde será exibida as vagas em aberto de acordo com as informações submetidas anteriormente:
+   ![image](https://user-images.githubusercontent.com/29809108/134245810-b559c5d3-25af-4684-98be-949fc53360fe.png)
+   
+   Assim que o candidato submeter suas informações ele será apresentado ao 'dashboard' principal - a já mencionada anteriormente "Área do Candidato".
+   No menu da esquerda estará listada diversas funcionalidades de acordo com suas categorias: "**Painel de Controle**", "**Perfil**", "**Mensagens**", "**Configurações**" e "**Sobre**".
 
+   - **Vale ressaltar que todas as funcionalidades não foram desenvolvidas em 100% de suas potêncialidades. Serão apresentadas à seguir somente aquelas que conseguimos desenvolver em tempo hábil e a teoria que nos levou a criar cada um desses sub-menus.**
+
+    No sub-menu "**Painel de Controle**" o candidato poderá visualizar todas as vagas em aberto, assim como todas as vagas por ele pretendidas: 
+    ![image](https://user-images.githubusercontent.com/29809108/134249319-58a3a7a4-2aaa-49e6-81c6-b1083db44424.png)
+    
+   Vagas em aberto: O candidato terá acesso a todas as vagas disponibilizadas pelos funcionários do "Shopping do Cidadão" - resgatadas do painel de "Gerenciamento de Vagas". O principal fator que os candidatos deverão levar em consideração é o percentual de compatibilidade. Essa relação é calculada no que concerne aqueles dados preenchidos previamente pelo candidato em conjunto com os pesos designados para cada atributo da vaga. Além disso, ao clicar sobre a vaga será aberta sua descrição:
+    ![image](https://user-images.githubusercontent.com/29809108/134249489-361348cd-07db-438d-834d-b1b8889819f5.png)
+
+   **Suas aplicações**: Nessa funcionalidade só serão apresentadas as vagas que o candidato optou a se candidatar. Ademais, na coluna situação serão exibidas os processos em que se encontram as vagas, tais como: "Aberta", "Fechada", "Agendada entrevista" etc:
+   ![image](https://user-images.githubusercontent.com/29809108/134250103-d28d67ac-abf6-4f1a-8923-47dc9d14500d.png)
+
+   No sub-menu "**Perfil**" o candidato poderá gerenciar todas as informações referentes à ele que se encontram no banco de dado da plataforma:
+   ![image](https://user-images.githubusercontent.com/29809108/134250319-cc4ba1f3-1d68-4d93-8890-58cc94b931c8.png)
+   
+   **Informações**: Na funcionalidade "**Informações**" o candidato terá acesso a todas as suas informações preenchidas na hora do cadastro, com toda a possibilidade de remanejamento e até mesmo exclusão:
+   ![image](https://user-images.githubusercontent.com/29809108/134250652-1600ede4-2e98-4f89-afbb-a23e168d4d1c.png)
+
+   No sub-menu "**Mensagens**" é onde poderão ser trocadas mensagens 'built-in' na plataforma.
+   - **A principal motivação para se ter esse sub-menu é trazer um maior conforto e agilidade para o candidato que se encontra dentro de SUA área.**
+
+   Já no sub-menu "**Configurações**" é onde o candidato poderá remanejar as informações pertinente ao login. Diferentemente do sub-menu "**Perfil**", aqui estarão dispostas funcionalidades de teor mais técnico, como por exemplo a possibilidade de troca de e-mail e senha cadastrado.
+
+   E, para finalizarmos, o sub-menu "**Sobre**" que apresentará informações relativas ao funcionamento de "Matchs" dos candidatos e meios de contato do "Shopping do Cidadão", trazendo uma maior transparência para seus usuários.     
+   
    2.2. **Hackathons**: [Explicação de Funcionamento](https://github.com/LeandroLuna/SDC-Eletrolls/blob/main/subpages/educa_hackathon.md#hackathons)
 
 E por fim, o funcionamento do programa **["Educa Cidadão"](https://github.com/LeandroLuna/SDC-Eletrolls/blob/main/subpages/educa_hackathon.md#educa-cidad%C3%A3o).**
@@ -224,7 +267,7 @@ Abaixo será listada todas inspirações e referências utilizadas para realiza�
 - [DataTables - CloudTables](https://datatables.net/)
 - [Live Vanilla DataTables CRUD with JavaScript PHP & MySql](https://www.webslesson.info/2021/08/live-vanilla-datatables-crud-with-javascript-php-mysql.html)
 - [Sidebar Menu | With Sub-Menus - Using HTML, CSS & JQuery](https://www.youtube.com/watch?v=5gnRgIq8-LQ&ab_channel=CodingSnow)
-- [Modal - Boostrap](https://getbootstrap.com/docs/4.0/components/modal/)
+- [Modal - Bootstrap](https://getbootstrap.com/docs/4.0/components/modal/)
 
 ## Copyright
 
