@@ -12,7 +12,7 @@ O projeto desenvolvido pretende tornar a **seleção e contratação dos recruta
 
 Para tanto, foram utilizadas técnicas de gerenciamento e modelagem de banco de dados em conjunto com linguagens de programação front-end (HTML e CSS) e back-end (JavaScript, PHP e Hack).
 
-Complementando, para construção das tabelas envolvidas na construção do website foram utilizadas as tabelas propiciadas pela “**CloudTables**”. Ademais, todas referencias de layout e design poderão ser encontradas na secção “**Bibliográfia/Licensas**”.
+Complementando, para construção das tabelas envolvidas na construção do website foram utilizadas as tabelas propiciadas pela “**CloudTables**”, e o framework front-end "**Bootstrap**". Ademais, todas referencias de layout e design poderão ser encontradas na secção “**Bibliográfia/Licensas**”.
 
 **Todos os direitos reservados.**
 
