@@ -98,7 +98,7 @@ Complementando, para construção das tabelas envolvidas na construção do webs
 
 ## Demonstração de funcionamento
 
-_Vídeo com o funcionamento da plataforma:_ [Prótotipo](https://drive.google.com/file/d/1R-td5ytux6Ofzm6R_hB1mT5LBV38taW8/view?usp=sharing)
+_Vídeo com o funcionamento da plataforma:_ [Prótotipo](https://drive.google.com/file/d/1aSSxTszb2zDFrL7ZYgmnc0qZFRCYGQHB/view?usp=sharing)
 
 Ao adentrar no website o usuário se deparará com a página principal da plataforma:
 ![image](https://user-images.githubusercontent.com/29809108/131199430-0a363fcd-2402-412d-a73e-e08e112f98e4.png)
