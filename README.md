@@ -16,6 +16,9 @@ Complementando, para construção das tabelas envolvidas na construção do webs
 
 **Todos os direitos reservados.**
 
+## Resumo do projeto sintetizado em um poster
+[E-Pôster Acadêmico - Eletrolls](https://github.com/LeandroLuna/SDC-Eletrolls/files/7491286/E-Poster.Academico.-.Eletrolls.pdf)
+
 ## Organização dos arquivos
 
 ```
